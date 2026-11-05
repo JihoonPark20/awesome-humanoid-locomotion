@@ -2,18 +2,23 @@
 
 **English** · [한국어](README.ko.md)
 
-A year-by-year review of **264 papers** on humanoid locomotion and related work, with a one-sentence summary of each.
+A year-by-year review of **270 papers** on humanoid locomotion and related work, with a one-sentence summary of each.
 
 [2026](#2026) · [2025](#2025) · [2024](#2024) · [2023](#2023)
 
 Papers are grouped by conference year or journal issue year; works without a confirmed venue use their public release year. Within each year, newer release months appear first. Related work includes motion tracking, perceptive control, recovery and loco-manipulation.
 
-A venue without a qualifier indicates publication. **Accepted** and **Program listing** are distinct; **—** means no venue was verified, not that the work is unpublished. Bibliographic snapshot: 2026-11-04.
+A venue without a qualifier indicates publication. **Accepted** and **Program listing** are distinct; **—** means no venue was verified, not that the work is unpublished. Bibliographic snapshot: 2026-11-05.
 
 ## 2026
 
 | Paper | Venue | One-line takeaway | Resources |
 | :--- | :--- | :--- | :--- |
+| [Perceptive Humanoid Motion from Simulation](https://arxiv.org/abs/2611.06908) | — | Synthesizing vision-language-motion data in 1,000 simulated homes enables a perceptive humanoid system to execute walking, crawling, and multi-skill tasks zero-shot on real hardware. | [arXiv 2026.11](https://arxiv.org/abs/2611.06908)<br>[Project](https://apple-aiml-research.github.io/ml-halo/) |
+| [Playing Soccer Like Humans Do: Learning Versatile and Agile Humanoid Soccer via Latent Motion Priors](https://arxiv.org/abs/2611.06564) | [CoRL 2026](https://openreview.net/forum?id=XnyoJXimAK)<br>Accepted | A motion prior learned from human soccer captures lets a hierarchical RL policy combine locomotion, dribbling, trapping, and kicking with zero-shot transfer to Unitree G1. | [arXiv 2026.11](https://arxiv.org/abs/2611.06564) |
+| [**H^2MARL:** Hierarchical Heterogeneous Multi-agent Reinforcement Learning for Humanoid Robot Control](https://arxiv.org/abs/2611.06523) | — | Joint-specific physical descriptors and joint optimization of high-level planning and low-level execution improve locomotion stability and whole-body coordination in simulation. | [arXiv 2026.11](https://arxiv.org/abs/2611.06523) |
+| [**GRASP:** Gradient-Guided Sampling for Contact-Rich Physics-Based Motion Retargeting](https://arxiv.org/abs/2611.05754) | — | Recovering gradient guidance from past simulator rollouts enables contact-aware motion retargeting without a differentiable simulator and improves PPO tracking of retargeted motions. | [arXiv 2026.11](https://arxiv.org/abs/2611.05754)<br>[Project](https://computationalrobotics.seas.harvard.edu/GRASP/)<br>[Code](https://github.com/ComputationalRobotics/GRASP_code) |
+| [**Ctrl-F:** Force as an Interface for Humanoid Loco-Manipulation](https://arxiv.org/abs/2611.05507) | — | Explicit contact-force commands and an online force planner augment humanoid motion tracking, enabling G1 to push, drag, and kick objects while adapting to changing loads. | [arXiv 2026.11](https://arxiv.org/abs/2611.05507)<br>[Project](https://forcectrl.github.io/) |
 | [**MAPO:** Mixture of Experts with Alternating Policy Optimization for Universal Humanoid Motion Tracking](https://arxiv.org/abs/2611.02613) | [CoRL 2026](https://mapo-corl2026.github.io/MAPO/)<br>Accepted | Alternating optimization of the MoE router and experts prevents misestimated policy divergence and improves universal motion-tracking performance. | [arXiv 2026.11](https://arxiv.org/abs/2611.02613)<br>[Project](https://mapo-corl2026.github.io/MAPO/) |
 | [**FORGE:** Feasible Online Reduced-Order Reference Generation and Whole-Body Execution for Agile Humanoid Locomotion](https://arxiv.org/abs/2610.37974) | [Humanoids 2026](https://arxiv.org/abs/2610.37974)<br>Accepted | A reduced-order dynamics model generates whole-body references online; a separate policy tracks them on G1 for forward, backward and lateral travel and single-leg hopping. | [arXiv 2026.10](https://arxiv.org/abs/2610.37974) |
 | [**HC2Robot:** Hyper-Connection Transformers with Predicted Foresight for Multi-Terrain Humanoid Parkour](https://arxiv.org/abs/2610.36825) | — | From onboard sensing, a Transformer receives predictions of when and where each foot will land and how well it will be supported, guiding steps on stairs and across gaps. | [arXiv 2026.10](https://arxiv.org/abs/2610.36825) |
@@ -190,6 +195,7 @@ A venue without a qualifier indicates publication. **Accepted** and **Program li
 
 | Paper | Venue | One-line takeaway | Resources |
 | :--- | :--- | :--- | :--- |
+| [Contact-Implicit Whole-Body Trajectory Optimization for Dynamic Humanoid Locomotion on Parameterizable Uneven Terrain](https://doi.org/10.1109/LRA.2025.3614066) | [IEEE RA-L 2025](https://doi.org/10.1109/LRA.2025.3614066) | A smooth terrain representation and contact-implicit whole-body optimization generate dynamic humanoid trajectories on uneven ground without predefined contact sequences, with preliminary ErgoCub tests. | [arXiv 2026.11](https://arxiv.org/abs/2611.05585) |
 | [Do You Have Freestyle? Expressive Humanoid Locomotion via Audio Control](https://arxiv.org/abs/2512.23650) | — | An audio-conditioned diffusion policy produces dancing to music and gestures to speech without reconstructing human poses as an intermediate step. | [arXiv 2025.12](https://arxiv.org/abs/2512.23650) |
 | [**RoboMirror:** Understand Before You Imitate for Video to Humanoid Locomotion](https://arxiv.org/abs/2512.23649) | — | A diffusion policy imitates movement intent extracted from first- or third-person video without explicit human pose reconstruction or retargeting. | [arXiv 2025.12](https://arxiv.org/abs/2512.23649) |
 | [**E-SDS:** Environment-aware See it, Do it, Sorted - Automated Environment-Aware Reinforcement Learning for Humanoid Locomotion](https://arxiv.org/abs/2512.16446) | — | A vision–language model writes rewards from demonstrations and terrain-sensor information, enabling stair descent in a case where hand-designed rewards failed. | [arXiv 2025.12](https://arxiv.org/abs/2512.16446) |

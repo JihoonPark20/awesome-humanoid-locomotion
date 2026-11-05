@@ -2,18 +2,23 @@
 
 [English](README.md) · **한국어**
 
-휴머노이드 보행과 관련 연구 **264편**의 핵심 방법과 결과를 연도별로 정리했습니다.
+휴머노이드 보행과 관련 연구 **270편**의 핵심 방법과 결과를 연도별로 정리했습니다.
 
 [2026](#2026) · [2025](#2025) · [2024](#2024) · [2023](#2023)
 
 학회는 개최연도, 저널은 권·호 연도, 게재처 미확인 논문은 공개연도 기준입니다. 같은 연도 안에서는 공개월이 최근인 순서입니다. 보행 외에도 모션 추종, 지형 인식 제어, 회복, 이동·조작 관련 연구를 포함합니다.
 
-학회·저널명만 있으면 정식 게재입니다. **채택**과 **프로그램 수록**은 구분했으며, **—**는 미출판이 아니라 게재처 미확인을 뜻합니다. 서지 정보 기준: 2026-11-04.
+학회·저널명만 있으면 정식 게재입니다. **채택**과 **프로그램 수록**은 구분했으며, **—**는 미출판이 아니라 게재처 미확인을 뜻합니다. 서지 정보 기준: 2026-11-05.
 
 ## 2026
 
 | 논문 | 학회·저널 | 핵심 한 줄 | 자료 |
 | :--- | :--- | :--- | :--- |
+| [Perceptive Humanoid Motion from Simulation](https://arxiv.org/abs/2611.06908) | — | 가상 주거 공간 1,000곳에서 합성한 영상·언어·동작 데이터로 지각 기반 휴머노이드 제어를 학습해, 실제 로봇에서 보행·기어가기와 복합 과제를 제로샷 수행한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.06908)<br>[프로젝트](https://apple-aiml-research.github.io/ml-halo/) |
+| [Playing Soccer Like Humans Do: Learning Versatile and Agile Humanoid Soccer via Latent Motion Priors](https://arxiv.org/abs/2611.06564) | [CoRL 2026](https://openreview.net/forum?id=XnyoJXimAK)<br>채택 | 인간 축구 동작에서 학습한 잠재 동작 prior를 계층형 RL에 결합해, 이동·드리블·트래핑·킥을 하나의 정책으로 수행하고 실제 G1에 제로샷 전이한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.06564) |
+| [**H^2MARL:** Hierarchical Heterogeneous Multi-agent Reinforcement Learning for Humanoid Robot Control](https://arxiv.org/abs/2611.06523) | — | 관절별 구동·운동학·동역학 특성을 반영하고 자세 계획기와 관절 실행기를 공동 최적화해, 시뮬레이션에서 보행 안정성과 전신 협응을 개선한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.06523) |
+| [**GRASP:** Gradient-Guided Sampling for Contact-Rich Physics-Based Motion Retargeting](https://arxiv.org/abs/2611.05754) | — | 이전 시뮬레이터 롤아웃에서 비용 기울기를 근사해 미분 가능한 시뮬레이터 없이 접촉을 고려한 동작 리타기팅을 수행하고 PPO 동작 추종을 개선한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.05754)<br>[프로젝트](https://computationalrobotics.seas.harvard.edu/GRASP/)<br>[코드](https://github.com/ComputationalRobotics/GRASP_code) |
+| [**Ctrl-F:** Force as an Interface for Humanoid Loco-Manipulation](https://arxiv.org/abs/2611.05507) | — | 손·발 접촉 힘 명령과 온라인 힘 계획기를 동작 추종기에 추가해, 실제 G1에서 하중 변화에 적응하며 물체 밀기·끌기·차기를 수행한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.05507)<br>[프로젝트](https://forcectrl.github.io/) |
 | [**MAPO:** Mixture of Experts with Alternating Policy Optimization for Universal Humanoid Motion Tracking](https://arxiv.org/abs/2611.02613) | [CoRL 2026](https://mapo-corl2026.github.io/MAPO/)<br>채택 | MoE의 router와 전문가를 번갈아 최적화해 정책 간 발산 추정 오류를 줄이고, 다양한 전신 동작의 추종 성공률을 높인다. | [arXiv 2026.11](https://arxiv.org/abs/2611.02613)<br>[프로젝트](https://mapo-corl2026.github.io/MAPO/) |
 | [**FORGE:** Feasible Online Reduced-Order Reference Generation and Whole-Body Execution for Agile Humanoid Locomotion](https://arxiv.org/abs/2610.37974) | [Humanoids 2026](https://arxiv.org/abs/2610.37974)<br>채택 | 축소 동역학 모델이 보행 명령에 맞는 전신 참조 동작을 실시간 생성하고, 별도 정책이 이를 추종해 G1의 전후·측방 이동과 한 발 뛰기를 구현한다. | [arXiv 2026.10](https://arxiv.org/abs/2610.37974) |
 | [**HC2Robot:** Hyper-Connection Transformers with Predicted Foresight for Multi-Terrain Humanoid Parkour](https://arxiv.org/abs/2610.36825) | — | 로봇 센서로 각 발의 다음 착지 시점·위치·지지 품질을 예측해 Transformer에 제공하고, 계단이나 틈을 건널 발 디딤을 결정한다. | [arXiv 2026.10](https://arxiv.org/abs/2610.36825) |
@@ -190,6 +195,7 @@
 
 | 논문 | 학회·저널 | 핵심 한 줄 | 자료 |
 | :--- | :--- | :--- | :--- |
+| [Contact-Implicit Whole-Body Trajectory Optimization for Dynamic Humanoid Locomotion on Parameterizable Uneven Terrain](https://doi.org/10.1109/LRA.2025.3614066) | [IEEE RA-L 2025](https://doi.org/10.1109/LRA.2025.3614066) | 매끄러운 지형 표현과 접촉 시퀀스를 미리 지정하지 않는 전신 최적화로 비평탄 지형의 동적 보행 궤적을 생성하고 ErgoCub에서 초기 타당성을 확인한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.05585) |
 | [Do You Have Freestyle? Expressive Humanoid Locomotion via Audio Control](https://arxiv.org/abs/2512.23650) | — | 음성을 동작 스타일 신호로 쓰는 확산 정책으로, 별도로 사람 자세를 복원하지 않고 음악에 맞춰 춤추거나 말에 맞춰 몸짓을 생성한다. | [arXiv 2025.12](https://arxiv.org/abs/2512.23650) |
 | [**RoboMirror:** Understand Before You Imitate for Video to Humanoid Locomotion](https://arxiv.org/abs/2512.23649) | — | 1·3인칭 영상에서 사람의 관절 자세 대신 움직임의 의도를 추출하고, 이를 확산 정책에 넣어 명시적인 자세 복원·리타기팅 없이 따라 움직인다. | [arXiv 2025.12](https://arxiv.org/abs/2512.23649) |
 | [**E-SDS:** Environment-aware See it, Do it, Sorted - Automated Environment-Aware Reinforcement Learning for Humanoid Locomotion](https://arxiv.org/abs/2512.16446) | — | 시각언어모델이 시범 영상과 지형 센서 정보를 바탕으로 보상함수를 작성해, 사람이 직접 설계한 보상이 실패한 계단 하강까지 학습시켰다. | [arXiv 2025.12](https://arxiv.org/abs/2512.16446) |
