@@ -2,18 +2,20 @@
 
 [English](README.md) · **한국어**
 
-휴머노이드 보행과 관련 연구 **270편**의 핵심 방법과 결과를 연도별로 정리했습니다.
+휴머노이드 보행과 관련 연구 **272편**의 핵심 방법과 결과를 연도별로 정리했습니다.
 
 [2026](#2026) · [2025](#2025) · [2024](#2024) · [2023](#2023)
 
 학회는 개최연도, 저널은 권·호 연도, 게재처 미확인 논문은 공개연도 기준입니다. 같은 연도 안에서는 공개월이 최근인 순서입니다. 보행 외에도 모션 추종, 지형 인식 제어, 회복, 이동·조작 관련 연구를 포함합니다.
 
-학회·저널명만 있으면 정식 게재입니다. **채택**과 **프로그램 수록**은 구분했으며, **—**는 미출판이 아니라 게재처 미확인을 뜻합니다. 서지 정보 기준: 2026-11-05.
+학회·저널명만 있으면 정식 게재입니다. **채택**과 **프로그램 수록**은 구분했으며, **—**는 미출판이 아니라 게재처 미확인을 뜻합니다. 서지 정보 기준: 2026-11-06.
 
 ## 2026
 
 | 논문 | 학회·저널 | 핵심 한 줄 | 자료 |
 | :--- | :--- | :--- | :--- |
+| [**STEP:** Spatiotemporal Training with Explicit Prediction for Perceptive Humanoid Locomotion](https://arxiv.org/abs/2611.08097) | — | 깊이 영상·자기수용감각의 상호 마스킹 예측과 행동 조건부 다음 상태 예측을 함께 학습해, 실제 Noetix E1의 지형 통과 시험 100회 중 98회 성공했다. | [arXiv 2026.11](https://arxiv.org/abs/2611.08097) |
+| [Terrain-Indexed Motion Priors and Geometric Support for Extreme Humanoid Parkour](https://arxiv.org/abs/2611.08056) | — | 지형별 동작 사전분포와 손·무릎의 기하학적 지지점 유도를 단계적으로 결합해, 실기 정책 미세조정 없이 Noetix E1의 장애물 시험 30회 중 29회 성공했다. | [arXiv 2026.11](https://arxiv.org/abs/2611.08056) |
 | [Perceptive Humanoid Motion from Simulation](https://arxiv.org/abs/2611.06908) | — | 가상 주거 공간 1,000곳에서 합성한 영상·언어·동작 데이터로 지각 기반 휴머노이드 제어를 학습해, 실제 로봇에서 보행·기어가기와 복합 과제를 제로샷 수행한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.06908)<br>[프로젝트](https://apple-aiml-research.github.io/ml-halo/) |
 | [Playing Soccer Like Humans Do: Learning Versatile and Agile Humanoid Soccer via Latent Motion Priors](https://arxiv.org/abs/2611.06564) | [CoRL 2026](https://openreview.net/forum?id=XnyoJXimAK)<br>채택 | 인간 축구 동작에서 학습한 잠재 동작 prior를 계층형 RL에 결합해, 이동·드리블·트래핑·킥을 하나의 정책으로 수행하고 실제 G1에 제로샷 전이한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.06564) |
 | [**H^2MARL:** Hierarchical Heterogeneous Multi-agent Reinforcement Learning for Humanoid Robot Control](https://arxiv.org/abs/2611.06523) | — | 관절별 구동·운동학·동역학 특성을 반영하고 자세 계획기와 관절 실행기를 공동 최적화해, 시뮬레이션에서 보행 안정성과 전신 협응을 개선한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.06523) |

@@ -2,18 +2,20 @@
 
 **English** · [한국어](README.ko.md)
 
-A year-by-year review of **270 papers** on humanoid locomotion and related work, with a one-sentence summary of each.
+A year-by-year review of **272 papers** on humanoid locomotion and related work, with a one-sentence summary of each.
 
 [2026](#2026) · [2025](#2025) · [2024](#2024) · [2023](#2023)
 
 Papers are grouped by conference year or journal issue year; works without a confirmed venue use their public release year. Within each year, newer release months appear first. Related work includes motion tracking, perceptive control, recovery and loco-manipulation.
 
-A venue without a qualifier indicates publication. **Accepted** and **Program listing** are distinct; **—** means no venue was verified, not that the work is unpublished. Bibliographic snapshot: 2026-11-05.
+A venue without a qualifier indicates publication. **Accepted** and **Program listing** are distinct; **—** means no venue was verified, not that the work is unpublished. Bibliographic snapshot: 2026-11-06.
 
 ## 2026
 
 | Paper | Venue | One-line takeaway | Resources |
 | :--- | :--- | :--- | :--- |
+| [**STEP:** Spatiotemporal Training with Explicit Prediction for Perceptive Humanoid Locomotion](https://arxiv.org/abs/2611.08097) | — | Cross-modal masked prediction and action-conditioned next-state prediction jointly train a perceptive locomotion policy, which succeeds in 98 of 100 real-world terrain trials on Noetix E1. | [arXiv 2026.11](https://arxiv.org/abs/2611.08097) |
+| [Terrain-Indexed Motion Priors and Geometric Support for Extreme Humanoid Parkour](https://arxiv.org/abs/2611.08056) | — | Three-stage imitation combines terrain-indexed motion priors with geometric hand–knee support guidance, enabling Noetix E1 to complete 29 of 30 real-world obstacle trials without policy fine-tuning. | [arXiv 2026.11](https://arxiv.org/abs/2611.08056) |
 | [Perceptive Humanoid Motion from Simulation](https://arxiv.org/abs/2611.06908) | — | Synthesizing vision-language-motion data in 1,000 simulated homes enables a perceptive humanoid system to execute walking, crawling, and multi-skill tasks zero-shot on real hardware. | [arXiv 2026.11](https://arxiv.org/abs/2611.06908)<br>[Project](https://apple-aiml-research.github.io/ml-halo/) |
 | [Playing Soccer Like Humans Do: Learning Versatile and Agile Humanoid Soccer via Latent Motion Priors](https://arxiv.org/abs/2611.06564) | [CoRL 2026](https://openreview.net/forum?id=XnyoJXimAK)<br>Accepted | A motion prior learned from human soccer captures lets a hierarchical RL policy combine locomotion, dribbling, trapping, and kicking with zero-shot transfer to Unitree G1. | [arXiv 2026.11](https://arxiv.org/abs/2611.06564) |
 | [**H^2MARL:** Hierarchical Heterogeneous Multi-agent Reinforcement Learning for Humanoid Robot Control](https://arxiv.org/abs/2611.06523) | — | Joint-specific physical descriptors and joint optimization of high-level planning and low-level execution improve locomotion stability and whole-body coordination in simulation. | [arXiv 2026.11](https://arxiv.org/abs/2611.06523) |
