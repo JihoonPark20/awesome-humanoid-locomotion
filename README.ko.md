@@ -2,18 +2,27 @@
 
 [English](README.md) · **한국어**
 
-휴머노이드·이족 이동 기술과 관련 연구 **262편**의 핵심 방법과 결과를 연도별로 정리했습니다.
+휴머노이드·이족 이동 기술과 관련 연구 **271편**의 핵심 방법과 결과를 연도별로 정리했습니다.
 
 [2026](#2026) · [2025](#2025) · [2024](#2024) · [2023](#2023)
 
 학회는 개최연도, 저널은 권·호 연도, 게재처 미확인 논문은 공개연도 기준입니다. 같은 연도 안에서는 공개월이 최근인 순서입니다. 보행 외에도 모션 추종, 지형 인식 제어, 회복, 이동·조작 관련 연구를 포함합니다.
 
-확인된 학회·저널은 이름과 연도만 표기하고, 워크숍(Workshop) 논문만 구분합니다. **—**는 게재처 미확인(투고·심사 중 포함)을 뜻하며, 미출판 논문이라는 의미는 아닙니다. 서지 정보 기준: 2026-11-09.
+확인된 학회·저널은 이름과 연도만 표기하고, 워크숍(Workshop) 논문만 구분합니다. **—**는 게재처 미확인(투고·심사 중 포함)을 뜻하며, 미출판 논문이라는 의미는 아닙니다. 서지 정보 기준: 2026-11-10.
 
 ## 2026
 
 | 논문 | 학회·저널 | 핵심 한 줄 | 자료 |
 | :--- | :--- | :--- | :--- |
+| [**LHNav:** Long-Horizon Humanoid Navigation via Multirate Coordination and Physics-Grounded Action Data](https://arxiv.org/abs/2611.12136) | — | 비동기 과제 추론·국소 동작 생성·전신 제어를 물리적으로 보정한 시범 데이터와 결합해, 장기 내비게이션 시뮬레이션 성공률 75.56%와 실제 G1의 다중 목표 제로샷 이동을 보였다. | [arXiv 2026.11](https://arxiv.org/abs/2611.12136)<br>[프로젝트](https://robbyant-research.github.io/LHNav/) |
+| [**HINT-VLM:** Humanoid Interactive Navigation over Rough Terrain with Embodiment-Grounded Vision-Language Model](https://arxiv.org/abs/2611.11665) | [CoRL 2026 Workshop (SISREN)](https://yzwfromk.github.io/HINT_VLM/) | 로봇의 실제 물체 상호작용 기록으로 VLM의 이동 가능성 예측을 가우시안 프로세스로 보정해, 실제 G1이 험지에서 장애물을 밀지 우회할지 계획한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.11665)<br>[프로젝트](https://yzwfromk.github.io/HINT_VLM/) |
+| [**Kimodo-Policy:** Learning Kinematic Action Models for Humanoid Loco-Manipulation](https://arxiv.org/abs/2611.11554) | — | 동결된 텍스트-동작 생성기에 시각 조건과 몸통 이동·전신·손의 계층형 제어를 결합해, 이동·조작 과제에서 HumanoidArena 성공률 72.14%와 실기 8개 과제 평균 60%를 달성한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.11554)<br>[프로젝트](https://kimodo-policy.github.io/) |
+| [From Festival Video to the Stage: A Sim-to-Real Ladder for Long-Horizon Expressive Whole-Body Dance on a Commercial Humanoid](https://arxiv.org/abs/2611.11127) | — | 단안 영상의 인간 동작 복원·리타기팅·RL 추종을 실제 G1의 아와오도리 춤으로 전이해, 9.7분 연속 공연과 기존 보행 제어기로의 자동 전환을 시연한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.11127) |
+| [Large-Scale Hierarchical Decision-Making in Robot Control via ADMM](https://arxiv.org/abs/2611.11090) | — | 계층형 로봇 제어용 ADMM 해법이 중간 정확도에서는 계산을 줄이지만, G1 징검다리 전신 제어처럼 높은 정확도가 필요한 경우에는 기존 내점법보다 느린 한계도 확인한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.11090) |
+| [**RoboMoCap:** A Large-Scale Whole-Body Motion Capture Dataset with Egocentric Vision for Robot Learning](https://arxiv.org/abs/2611.10994) | — | 14명의 200시간 이상 자기시점 영상과 120 Hz 전신 모션캡처를 동기화해 보행·험지 통과·이동·조작 데이터를 구축하고, 발 접촉 추정과 휴머노이드 리타기팅을 평가한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.10994)<br>[프로젝트](https://bitrobot-foundation.github.io/robomocap/) |
+| [**DreamVLA:** From Generated Human Motions to Humanoid Vision-Language-Action Policies](https://arxiv.org/abs/2611.10872) | [CoRL 2026 Workshops (G2A, Loco-Manipulation)](https://arxiv.org/abs/2611.10872) | 생성한 인간 동작을 시뮬레이션 RL의 참조로 사용하고, VLA 실패 상태에서 교사를 재실행하는 참조 조건부 DAgger로 보행 후 집기 등의 전신 과제를 학습한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.10872)<br>[프로젝트](https://ember-center-berkeley.github.io/DreamVLA/) |
+| [Capturability-Aware Footstep Planning in Cluttered Environments: A Recursively Feasible Sequential MPC on Axis-Aligned Safe Corridors](https://arxiv.org/abs/2611.10169) | [Humanoids 2026](https://arxiv.org/abs/2611.10169) | 선형 역진자 기반 순차 MPC에 캡처 가능성 제약과 겹치는 직사각형 안전 통로를 결합해, 장애물이 많은 Digit 시뮬레이션에서 발 디딤 계획의 재귀적 실행 가능성을 보장한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.10169) |
+| [A Unified Inertial Encoder for Human and Humanoid Motion](https://arxiv.org/abs/2611.10137) | — | 인간·휴머노이드 동작에서 합성한 IMU 신호를 공통 인코더로 학습해, 실기 학습 데이터 없이 실제 G1의 속도를 제로샷 추정하고 오차 0.099 m/s를 기록한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.10137) |
 | [**DKWBC:** Decoupling Motion Tracking and Balancing for Humanoid Whole-Body Control](https://arxiv.org/abs/2611.09605) | — | 역동역학 피드포워드와 PD 제어로 동작을 추종하고 잔차 토크 정책으로 균형을 유지해, 실제 휴머노이드에서 다양한 동작·하중·외부 접촉에 대응한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.09605)<br>[프로젝트](https://robbyant-research.github.io/DKWBC/) |
 | [**SUGARv2:** Learning Diverse Visual Humanoid Loco-Manipulation Skills from Synthesized Interaction References](https://arxiv.org/abs/2611.09266) | — | 재사용 가능한 작업 템플릿으로 로봇·물체 상호작용 참조를 합성하고 모방·시각 정책 증류·RL을 결합해, 이동·조작 5개 과제에서 시뮬레이션 평균 성공률 91%와 실기 전이를 보였다. | [arXiv 2026.11](https://arxiv.org/abs/2611.09266)<br>[프로젝트](https://tianshuwu.github.io/sugarv2-humanoid/) |
 | [**STRIDE:** Learning Humanoid Locomotion in Minutes with Acceleration-Based Rewards](https://arxiv.org/abs/2611.08857) | [CoRL 2026 Workshop (R2RL)](https://r2rl-workshop.github.io/) | 몸통 속도 추정 대신 IMU로 측정할 수 있는 가속도 명령 추종을 보상으로 사용하고, 오프폴리시 RL과 좌우 대칭 증강으로 시뮬레이션의 G1·Booster T1 보행을 14분 분량의 데이터로 학습한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.08857) |
