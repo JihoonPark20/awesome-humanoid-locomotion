@@ -1,6 +1,8 @@
 # Awesome Humanoid Locomotion · 휴머노이드 보행 논문
 
-[English](README.md) · **한국어**
+[English](README.md) · **한국어** · [中文](README.zh-CN.md)
+
+![휴머노이드 보행 티저 이미지](resource/teaser.png)
 
 휴머노이드·이족 이동 기술과 관련 연구 **272편**의 핵심 방법과 결과를 연도별로 정리했습니다.
 

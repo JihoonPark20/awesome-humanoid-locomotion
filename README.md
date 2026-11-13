@@ -1,6 +1,8 @@
 # Awesome Humanoid Locomotion
 
-**English** · [한국어](README.ko.md)
+**English** · [한국어](README.ko.md) · [中文](README.zh-CN.md)
+
+![Humanoid locomotion teaser](resource/teaser.png)
 
 A curated year-by-year collection of **272 papers** on humanoid locomotion and related work, with a one-sentence summary of each.
 
