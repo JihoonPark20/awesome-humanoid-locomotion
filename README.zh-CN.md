@@ -4,7 +4,7 @@
 
 ![人形机器人移动预览图](resource/teaser.png)
 
-按年份整理的 **272 篇**人形机器人及双足移动技术相关论文，每篇附有一句话概述，介绍核心方法与结果。
+按年份整理的 **273 篇**人形机器人及双足移动技术相关论文，每篇附有一句话概述，介绍核心方法与结果。
 
 [2026](#2026) · [2025](#2025) · [2024](#2024) · [2023](#2023)
 
@@ -12,12 +12,13 @@
 
 **范围分类：** **Core** = 行走、跑步、落足规划、地形穿越、平衡与恢复；**Enabling** = 动作跟踪与重定向、状态估计、数据集及学习/控制方法；**Related** = 导航、移动操作、非步行移动，以及在人形机器人移动任务上评估的通用机器人控制方法。分类依据论文的主要贡献，而非其全部实验。
 
-已确认的会议与期刊条目仅标注名称和年份，研讨会（Workshop）论文单独标注。**—** 表示尚未确认发表场所（包括已投稿和审稿中的论文），并不代表未发表。书目信息截至：2026-11-11。
+已确认的会议与期刊条目仅标注名称和年份，研讨会（Workshop）论文单独标注。**—** 表示尚未确认发表场所（包括已投稿和审稿中的论文），并不代表未发表。书目信息截至：2026-11-16。
 
 ## 2026
 
 | 论文 | 范围 | 会议·期刊 | 一句话概述 | 资源 |
 | :--- | :--- | :--- | :--- | :--- |
+| [Reusing Locomotion Training Recipes Across Humanoids via Body-Aligned Virtual Joints](https://arxiv.org/abs/2611.18003) | Core | — | 通过身体对齐的虚拟关节空间统一不同人形机器人的策略观测与动作，使同一套 RL 训练配置适用于三种机器人，并将实体 G1 的航向漂移降低近六倍。 | [arXiv 2026.11](https://arxiv.org/abs/2611.18003) |
 | [**LHNav:** Long-Horizon Humanoid Navigation via Multirate Coordination and Physics-Grounded Action Data](https://arxiv.org/abs/2611.12136) | Related | — | 异步任务推理、局部动作生成与全身执行利用符合物理规律的示范，在长时程仿真任务中达到 75.56% 的成功率，并在实体 G1 上实现零样本多目标导航。 | [arXiv 2026.11](https://arxiv.org/abs/2611.12136)<br>[项目](https://robbyant-research.github.io/LHNav/) |
 | [**HINT-VLM:** Humanoid Interactive Navigation over Rough Terrain with Embodiment-Grounded Vision-Language Model](https://arxiv.org/abs/2611.11665) | Related | [CoRL 2026 Workshop (SISREN)](https://yzwfromk.github.io/HINT_VLM/) | 高斯过程模型利用机器人交互数据修正 VLM 对物体可移动性的预测，使实体 G1 能在崎岖地形上规划推开障碍物或绕行。 | [arXiv 2026.11](https://arxiv.org/abs/2611.11665)<br>[项目](https://yzwfromk.github.io/HINT_VLM/) |
 | [**Kimodo-Policy:** Learning Kinematic Action Models for Humanoid Loco-Manipulation](https://arxiv.org/abs/2611.11554) | Related | — | 冻结的文本生成动作模型结合视觉条件与根节点—躯体—手部分层控制，实现人形机器人移动操作，在 HumanoidArena 中成功率达 72.14%，在八项实体任务中达 60%。 | [arXiv 2026.11](https://arxiv.org/abs/2611.11554)<br>[项目](https://kimodo-policy.github.io/) |

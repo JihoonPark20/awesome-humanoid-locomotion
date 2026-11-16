@@ -4,7 +4,7 @@
 
 ![Humanoid locomotion teaser](resource/teaser.png)
 
-A curated year-by-year collection of **272 papers** on humanoid locomotion and related work, with a one-sentence summary of each.
+A curated year-by-year collection of **273 papers** on humanoid locomotion and related work, with a one-sentence summary of each.
 
 [2026](#2026) · [2025](#2025) · [2024](#2024) · [2023](#2023)
 
@@ -12,12 +12,13 @@ Papers are grouped by conference year or journal issue year; works without a con
 
 **Scope:** **Core** = walking/running, foothold planning, terrain traversal, balance and recovery; **Enabling** = motion tracking/retargeting, estimation, datasets and learning/control methods; **Related** = navigation, loco-manipulation, non-walking mobility and general robot-control methods evaluated on humanoid mobility. Categories reflect the main contribution, not every experiment.
 
-Confirmed conference and journal entries show only the venue name and year; workshop papers are labeled separately. **—** means no confirmed venue (including submissions and works under review), not that the work is unpublished. Bibliographic snapshot: 2026-11-11.
+Confirmed conference and journal entries show only the venue name and year; workshop papers are labeled separately. **—** means no confirmed venue (including submissions and works under review), not that the work is unpublished. Bibliographic snapshot: 2026-11-16.
 
 ## 2026
 
 | Paper | Scope | Venue | One-line takeaway | Resources |
 | :--- | :--- | :--- | :--- | :--- |
+| [Reusing Locomotion Training Recipes Across Humanoids via Body-Aligned Virtual Joints](https://arxiv.org/abs/2611.18003) | Core | — | Body-aligned virtual joints give different humanoids a common policy action and observation interface, letting one RL training recipe work across three robots and reducing heading drift by nearly sixfold on a physical G1. | [arXiv 2026.11](https://arxiv.org/abs/2611.18003) |
 | [**LHNav:** Long-Horizon Humanoid Navigation via Multirate Coordination and Physics-Grounded Action Data](https://arxiv.org/abs/2611.12136) | Related | — | Asynchronous task reasoning, local motion generation and whole-body execution use physics-grounded demonstrations to achieve 75.56% long-horizon simulation success and zero-shot multi-goal navigation on a physical G1. | [arXiv 2026.11](https://arxiv.org/abs/2611.12136)<br>[Project](https://robbyant-research.github.io/LHNav/) |
 | [**HINT-VLM:** Humanoid Interactive Navigation over Rough Terrain with Embodiment-Grounded Vision-Language Model](https://arxiv.org/abs/2611.11665) | Related | [CoRL 2026 Workshop (SISREN)](https://yzwfromk.github.io/HINT_VLM/) | A Gaussian-process model corrects VLM predictions of object movability using robot interaction data, enabling a physical G1 to plan whether to push obstacles or detour on rough terrain. | [arXiv 2026.11](https://arxiv.org/abs/2611.11665)<br>[Project](https://yzwfromk.github.io/HINT_VLM/) |
 | [**Kimodo-Policy:** Learning Kinematic Action Models for Humanoid Loco-Manipulation](https://arxiv.org/abs/2611.11554) | Related | — | A frozen text-to-motion model with visual conditioning and hierarchical root–body–hand control supports humanoid loco-manipulation, reaching 72.14% success in HumanoidArena and 60% across eight physical tasks. | [arXiv 2026.11](https://arxiv.org/abs/2611.11554)<br>[Project](https://kimodo-policy.github.io/) |
