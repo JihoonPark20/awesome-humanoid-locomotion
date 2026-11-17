@@ -4,7 +4,7 @@
 
 ![Humanoid locomotion teaser](resource/teaser.png)
 
-A curated year-by-year collection of **273 papers** on humanoid locomotion and related work, with a one-sentence summary of each.
+A curated year-by-year collection of **280 papers** on humanoid locomotion and related work, with a one-sentence summary of each.
 
 [2026](#2026) · [2025](#2025) · [2024](#2024) · [2023](#2023)
 
@@ -12,12 +12,19 @@ Papers are grouped by conference year or journal issue year; works without a con
 
 **Scope:** **Core** = walking/running, foothold planning, terrain traversal, balance and recovery; **Enabling** = motion tracking/retargeting, estimation, datasets and learning/control methods; **Related** = navigation, loco-manipulation, non-walking mobility and general robot-control methods evaluated on humanoid mobility. Categories reflect the main contribution, not every experiment.
 
-Confirmed conference and journal entries show only the venue name and year; workshop papers are labeled separately. **—** means no confirmed venue (including submissions and works under review), not that the work is unpublished. Bibliographic snapshot: 2026-11-16.
+Confirmed conference and journal entries show only the venue name and year; workshop papers are labeled separately. **—** means no confirmed venue (including submissions and works under review), not that the work is unpublished. Bibliographic snapshot: 2026-11-17.
 
 ## 2026
 
 | Paper | Scope | Venue | One-line takeaway | Resources |
 | :--- | :--- | :--- | :--- | :--- |
+| [**Driving the Style:** Velocity-Conditioned Whole-Body Control from Motion Demonstrations](https://arxiv.org/abs/2611.20888) | Core | — | Tracking rewards and a privileged critic train a velocity-commanded humanoid policy without supplying reference trajectories to the actor; it achieves at least 98% success on held-out simulated commands and completes all physical G1 trials. | [arXiv 2026.11](https://arxiv.org/abs/2611.20888) |
+| [**QTOP:** Scaling Humanoid Motion Tracking with Quantile Critics](https://arxiv.org/abs/2611.20791) | Enabling | — | A distributional critic turns returns into CDF-based PPO advantages to balance learning across motion references, improving tracking over RL baselines in simulation and on a physical Unitree G1. | [arXiv 2026.11](https://arxiv.org/abs/2611.20791) |
+| [**XMimic and XSoma:** Learning Humanoid Motion Tracking and Locomotion in Under a Minute](https://arxiv.org/abs/2611.20452) | Enabling | — | JAX-compiled multi-GPU differentiable world-model training learns motion tracking (XMimic) and reference-free rough-terrain locomotion (XSoma) in 0.86 and 0.77 minutes, respectively, on four H100 GPUs. | [arXiv 2026.11](https://arxiv.org/abs/2611.20452) |
+| [**MoViC:** Real-Time Humanoid Whole-Body Control from Monocular Video Streams](https://arxiv.org/abs/2611.19998) | Enabling | — | Monocular RGB video drives motion reconstruction, retargeting and a frequency-domain whole-body tracker, bridging 10-Hz vision to 50-Hz control for dynamic motion imitation and hardware teleoperation. | [arXiv 2026.11](https://arxiv.org/abs/2611.19998)<br>[Project](https://movicproject.github.io/) |
+| [Towards Probabilistically Safe Reinforcement Learning: Theory and Deployment on Humanoid and Aerial Robots](https://arxiv.org/abs/2611.19616) | Enabling | — | An extension of RSGF-RL handles trajectory-level chance constraints and biased PPO-style estimates, bounding safety-constraint violations probabilistically during training and transferring whole-body control to a physical G1. | [arXiv 2026.11](https://arxiv.org/abs/2611.19616) |
+| [**ImpedanceMimic:** Learned Impedance as Action Space for Force-Accurate Motion Imitation](https://arxiv.org/abs/2611.19153) | Enabling | — | Instead of fixed-gain PD tracking, an RL policy adapts joint stiffness, damping and position targets to reproduce motion and contact forces, with zero-shot transfer from biomechanical models to a humanoid. | [arXiv 2026.11](https://arxiv.org/abs/2611.19153) |
+| [Leaning Over to Reach Far-Away Objects](https://arxiv.org/abs/2611.19100) | Related | — | Sampling-based whole-body MPC uses environmental bracing to extend a physical H1-2 humanoid’s reach by about 50 cm beyond unsupported standing while coordinating balance, reaching and recovery. | [arXiv 2026.11](https://arxiv.org/abs/2611.19100)<br>[Project](https://h12leaner.github.io/) |
 | [Reusing Locomotion Training Recipes Across Humanoids via Body-Aligned Virtual Joints](https://arxiv.org/abs/2611.18003) | Core | — | Body-aligned virtual joints give different humanoids a common policy action and observation interface, letting one RL training recipe work across three robots and reducing heading drift by nearly sixfold on a physical G1. | [arXiv 2026.11](https://arxiv.org/abs/2611.18003) |
 | [**LHNav:** Long-Horizon Humanoid Navigation via Multirate Coordination and Physics-Grounded Action Data](https://arxiv.org/abs/2611.12136) | Related | — | Asynchronous task reasoning, local motion generation and whole-body execution use physics-grounded demonstrations to achieve 75.56% long-horizon simulation success and zero-shot multi-goal navigation on a physical G1. | [arXiv 2026.11](https://arxiv.org/abs/2611.12136)<br>[Project](https://robbyant-research.github.io/LHNav/) |
 | [**HINT-VLM:** Humanoid Interactive Navigation over Rough Terrain with Embodiment-Grounded Vision-Language Model](https://arxiv.org/abs/2611.11665) | Related | [CoRL 2026 Workshop (SISREN)](https://yzwfromk.github.io/HINT_VLM/) | A Gaussian-process model corrects VLM predictions of object movability using robot interaction data, enabling a physical G1 to plan whether to push obstacles or detour on rough terrain. | [arXiv 2026.11](https://arxiv.org/abs/2611.11665)<br>[Project](https://yzwfromk.github.io/HINT_VLM/) |

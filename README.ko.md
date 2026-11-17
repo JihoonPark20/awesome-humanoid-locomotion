@@ -4,7 +4,7 @@
 
 ![휴머노이드 보행 티저 이미지](resource/teaser.png)
 
-휴머노이드·이족 이동 기술과 관련 연구 **273편**의 핵심 방법과 결과를 연도별로 정리했습니다.
+휴머노이드·이족 이동 기술과 관련 연구 **280편**의 핵심 방법과 결과를 연도별로 정리했습니다.
 
 [2026](#2026) · [2025](#2025) · [2024](#2024) · [2023](#2023)
 
@@ -12,12 +12,19 @@
 
 **Scope 분류:** **Core** = 보행·달리기·발 디딤·지형 통과·균형·회복, **Enabling** = 모션 추종·리타기팅·상태 추정·데이터셋·학습/제어 방법론, **Related** = 내비게이션·이동·조작·비보행 이동·휴머노이드 이동을 평가한 범용 로봇 제어. 논문의 모든 실험이 아닌 주된 기여를 기준으로 분류합니다.
 
-확인된 학회·저널은 이름과 연도만 표기하고, 워크숍(Workshop) 논문만 구분합니다. **—**는 게재처 미확인(투고·심사 중 포함)을 뜻하며, 미출판 논문이라는 의미는 아닙니다. 서지 정보 기준: 2026-11-16.
+확인된 학회·저널은 이름과 연도만 표기하고, 워크숍(Workshop) 논문만 구분합니다. **—**는 게재처 미확인(투고·심사 중 포함)을 뜻하며, 미출판 논문이라는 의미는 아닙니다. 서지 정보 기준: 2026-11-17.
 
 ## 2026
 
 | 논문 | Scope | 학회·저널 | 핵심 한 줄 | 자료 |
 | :--- | :--- | :--- | :--- | :--- |
+| [**Driving the Style:** Velocity-Conditioned Whole-Body Control from Motion Demonstrations](https://arxiv.org/abs/2611.20888) | Core | — | 동작 추종 보상과 참조 동작을 보는 특권 critic으로 학습하되 actor에는 속도 명령과 고유감각만 제공해, 미학습 속도 명령에서 시뮬레이션 성공률 98% 이상과 실물 G1의 전 시험 성공을 보였다. | [arXiv 2026.11](https://arxiv.org/abs/2611.20888) |
+| [**QTOP:** Scaling Humanoid Motion Tracking with Quantile Critics](https://arxiv.org/abs/2611.20791) | Enabling | — | 리턴 분포를 학습하는 critic과 CDF 기반 PPO advantage로 서로 다른 참조 동작의 학습 신호를 조정해, 시뮬레이션과 실물 Unitree G1에서 기존 RL 대비 동작 추종을 개선한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.20791) |
+| [**XMimic and XSoma:** Learning Humanoid Motion Tracking and Locomotion in Under a Minute](https://arxiv.org/abs/2611.20452) | Enabling | — | JAX 컴파일과 다중 GPU 병렬화를 활용한 미분 가능 월드모델 학습으로, H100 GPU 4장에서 모션 추종(XMimic)은 0.86분, 참조 동작 없는 험지 보행(XSoma)은 0.77분에 학습한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.20452) |
+| [**MoViC:** Real-Time Humanoid Whole-Body Control from Monocular Video Streams](https://arxiv.org/abs/2611.19998) | Enabling | — | 단안 RGB 영상으로 사람 동작을 복원·리타기팅하고 주파수 영역 특징을 쓰는 전신 추종기로 10 Hz 영상 처리와 50 Hz 제어를 연결해, 실기에서 동적 모션 모방과 원격조작을 시연한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.19998)<br>[프로젝트](https://movicproject.github.io/) |
+| [Towards Probabilistically Safe Reinforcement Learning: Theory and Deployment on Humanoid and Aerial Robots](https://arxiv.org/abs/2611.19616) | Enabling | — | RSGF-RL을 확장해 궤적 수준의 확률적 안전 제약과 편향된 PPO형 추정치를 다루고, 학습 중 제약 위반의 확률적 상한을 분석하며 실물 G1 전신 제어에 sim-to-real 전이한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.19616) |
+| [**ImpedanceMimic:** Learned Impedance as Action Space for Force-Accurate Motion Imitation](https://arxiv.org/abs/2611.19153) | Enabling | — | 고정 PD gain 대신 RL 정책이 관절 강성·감쇠·목표 위치를 조절해 동작과 접촉력을 함께 재현하고, 생체역학 모델에서 휴머노이드로 제로샷 전이한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.19153) |
+| [Leaning Over to Reach Far-Away Objects](https://arxiv.org/abs/2611.19100) | Related | — | 샘플링 기반 전신 MPC로 주변 환경을 손으로 짚어 균형을 유지하면서, 실물 H1-2의 도달 거리를 비지지 선 자세보다 약 50 cm 늘리고 동작 후 회복까지 수행한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.19100)<br>[프로젝트](https://h12leaner.github.io/) |
 | [Reusing Locomotion Training Recipes Across Humanoids via Body-Aligned Virtual Joints](https://arxiv.org/abs/2611.18003) | Core | — | 로봇마다 다른 관절 좌표계를 몸체 기준 가상 관절 공간으로 통일해 동일한 RL 보행 학습 설정을 휴머노이드 3종에 재사용하고, 실제 G1의 진행 방향 드리프트를 약 6배 줄였다. | [arXiv 2026.11](https://arxiv.org/abs/2611.18003) |
 | [**LHNav:** Long-Horizon Humanoid Navigation via Multirate Coordination and Physics-Grounded Action Data](https://arxiv.org/abs/2611.12136) | Related | — | 비동기 과제 추론·국소 동작 생성·전신 제어를 물리적으로 보정한 시범 데이터와 결합해, 장기 내비게이션 시뮬레이션 성공률 75.56%와 실제 G1의 다중 목표 제로샷 이동을 보였다. | [arXiv 2026.11](https://arxiv.org/abs/2611.12136)<br>[프로젝트](https://robbyant-research.github.io/LHNav/) |
 | [**HINT-VLM:** Humanoid Interactive Navigation over Rough Terrain with Embodiment-Grounded Vision-Language Model](https://arxiv.org/abs/2611.11665) | Related | [CoRL 2026 Workshop (SISREN)](https://yzwfromk.github.io/HINT_VLM/) | 로봇의 실제 물체 상호작용 기록으로 VLM의 이동 가능성 예측을 가우시안 프로세스로 보정해, 실제 G1이 험지에서 장애물을 밀지 우회할지 계획한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.11665)<br>[프로젝트](https://yzwfromk.github.io/HINT_VLM/) |
