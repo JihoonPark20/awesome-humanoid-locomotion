@@ -4,7 +4,7 @@
 
 ![Humanoid locomotion teaser](resource/teaser.png)
 
-A curated year-by-year collection of **280 papers** on humanoid locomotion and related work, with a one-sentence summary of each.
+A curated year-by-year collection of **282 papers** on humanoid locomotion and related work, with a one-sentence summary of each.
 
 [2026](#2026) · [2025](#2025) · [2024](#2024) · [2023](#2023)
 
@@ -12,12 +12,14 @@ Papers are grouped by conference year or journal issue year; works without a con
 
 **Scope:** **Core** = walking/running, foothold planning, terrain traversal, balance and recovery; **Enabling** = motion tracking/retargeting, estimation, datasets and learning/control methods; **Related** = navigation, loco-manipulation, non-walking mobility and general robot-control methods evaluated on humanoid mobility. Categories reflect the main contribution, not every experiment.
 
-Confirmed conference and journal entries show only the venue name and year; workshop papers are labeled separately. **—** means no confirmed venue (including submissions and works under review), not that the work is unpublished. Bibliographic snapshot: 2026-11-17.
+Confirmed conference and journal entries show only the venue name and year; workshop papers are labeled separately. **—** means no confirmed venue (including submissions and works under review), not that the work is unpublished. Bibliographic snapshot: 2026-11-18.
 
 ## 2026
 
 | Paper | Scope | Venue | One-line takeaway | Resources |
 | :--- | :--- | :--- | :--- | :--- |
+| [Autonomous Track Racing with a Commercially Available Humanoid: System Design and Real-World Deployment](https://arxiv.org/abs/2611.22445) | Core | — | A human-motion-prior RL running policy integrates vision-based lane tracking, IMU-assisted odometry across flight phases and motor-temperature-aware pacing on a physical G1; the robot competed in 100 m, 400 m and 1500 m track events, placing seventh of 35 in the 1500 m. | [arXiv 2026.11](https://arxiv.org/abs/2611.22445) |
+| [**ALERT:** Extending Humanoid Motion Trackers with a General and Lightweight Human Avoidance Pipeline](https://arxiv.org/abs/2611.22258) | Enabling | — | Lightweight adaptation adds human perception and proactive avoidance to pretrained whole-body trackers, enabling collision-free local avoidance and rapid return to reference tracking while retaining unseen-motion capabilities in simulation and on real humanoids. | [arXiv 2026.11](https://arxiv.org/abs/2611.22258) |
 | [**Driving the Style:** Velocity-Conditioned Whole-Body Control from Motion Demonstrations](https://arxiv.org/abs/2611.20888) | Core | — | Tracking rewards and a privileged critic train a velocity-commanded humanoid policy without supplying reference trajectories to the actor; it achieves at least 98% success on held-out simulated commands and completes all physical G1 trials. | [arXiv 2026.11](https://arxiv.org/abs/2611.20888) |
 | [**QTOP:** Scaling Humanoid Motion Tracking with Quantile Critics](https://arxiv.org/abs/2611.20791) | Enabling | — | A distributional critic turns returns into CDF-based PPO advantages to balance learning across motion references, improving tracking over RL baselines in simulation and on a physical Unitree G1. | [arXiv 2026.11](https://arxiv.org/abs/2611.20791) |
 | [**XMimic and XSoma:** Learning Humanoid Motion Tracking and Locomotion in Under a Minute](https://arxiv.org/abs/2611.20452) | Enabling | — | JAX-compiled multi-GPU differentiable world-model training learns motion tracking (XMimic) and reference-free rough-terrain locomotion (XSoma) in 0.86 and 0.77 minutes, respectively, on four H100 GPUs. | [arXiv 2026.11](https://arxiv.org/abs/2611.20452) |

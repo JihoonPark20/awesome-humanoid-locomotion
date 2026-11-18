@@ -4,7 +4,7 @@
 
 ![人形机器人移动预览图](resource/teaser.png)
 
-按年份整理的 **280 篇**人形机器人及双足移动技术相关论文，每篇附有一句话概述，介绍核心方法与结果。
+按年份整理的 **282 篇**人形机器人及双足移动技术相关论文，每篇附有一句话概述，介绍核心方法与结果。
 
 [2026](#2026) · [2025](#2025) · [2024](#2024) · [2023](#2023)
 
@@ -12,12 +12,14 @@
 
 **范围分类：** **Core** = 行走、跑步、落足规划、地形穿越、平衡与恢复；**Enabling** = 动作跟踪与重定向、状态估计、数据集及学习/控制方法；**Related** = 导航、移动操作、非步行移动，以及在人形机器人移动任务上评估的通用机器人控制方法。分类依据论文的主要贡献，而非其全部实验。
 
-已确认的会议与期刊条目仅标注名称和年份，研讨会（Workshop）论文单独标注。**—** 表示尚未确认发表场所（包括已投稿和审稿中的论文），并不代表未发表。书目信息截至：2026-11-17。
+已确认的会议与期刊条目仅标注名称和年份，研讨会（Workshop）论文单独标注。**—** 表示尚未确认发表场所（包括已投稿和审稿中的论文），并不代表未发表。书目信息截至：2026-11-18。
 
 ## 2026
 
 | 论文 | 范围 | 会议·期刊 | 一句话概述 | 资源 |
 | :--- | :--- | :--- | :--- | :--- |
+| [Autonomous Track Racing with a Commercially Available Humanoid: System Design and Real-World Deployment](https://arxiv.org/abs/2611.22445) | Core | — | 将人体动作先验 RL 跑步策略与视觉跑道线跟踪、飞行阶段 IMU 辅助里程计及电机温度感知配速相结合，使实体 G1 参加 100、400 和 1500 米比赛，并在 1500 米项目的 35 名参赛者中排名第七。 | [arXiv 2026.11](https://arxiv.org/abs/2611.22445) |
+| [**ALERT:** Extending Humanoid Motion Trackers with a General and Lightweight Human Avoidance Pipeline](https://arxiv.org/abs/2611.22258) | Enabling | — | 通过轻量适配为预训练全身动作跟踪器加入人体感知与主动避让，在仿真和实体实验中实现无碰撞的局部避让、快速恢复参考动作跟踪，并保留未见动作的跟踪能力。 | [arXiv 2026.11](https://arxiv.org/abs/2611.22258) |
 | [**Driving the Style:** Velocity-Conditioned Whole-Body Control from Motion Demonstrations](https://arxiv.org/abs/2611.20888) | Core | — | 利用动作跟踪奖励和可访问参考动作的特权 critic 训练策略，actor 仅接收速度指令与本体感知，在未见速度指令的仿真测试中成功率至少达 98%，实体 G1 试验全部成功。 | [arXiv 2026.11](https://arxiv.org/abs/2611.20888) |
 | [**QTOP:** Scaling Humanoid Motion Tracking with Quantile Critics](https://arxiv.org/abs/2611.20791) | Enabling | — | 使用分布式 critic 根据回报分布的 CDF 构造 PPO 优势，平衡不同参考动作的学习信号，并在仿真和实体 Unitree G1 上改善动作跟踪。 | [arXiv 2026.11](https://arxiv.org/abs/2611.20791) |
 | [**XMimic and XSoma:** Learning Humanoid Motion Tracking and Locomotion in Under a Minute](https://arxiv.org/abs/2611.20452) | Enabling | — | 通过 JAX 编译和多 GPU 并行加速可微世界模型训练，在四张 H100 GPU 上分别用 0.86 分钟学会动作跟踪（XMimic）、用 0.77 分钟学会无参考动作的崎岖地形移动（XSoma）。 | [arXiv 2026.11](https://arxiv.org/abs/2611.20452) |
