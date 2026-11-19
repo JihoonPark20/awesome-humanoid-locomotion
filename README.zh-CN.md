@@ -4,7 +4,7 @@
 
 ![人形机器人移动预览图](resource/teaser.png)
 
-按年份整理的 **282 篇**人形机器人及双足移动技术相关论文，每篇附有一句话概述，介绍核心方法与结果。
+按年份整理的 **285 篇**人形机器人及双足移动技术相关论文，每篇附有一句话概述，介绍核心方法与结果。
 
 [2026](#2026) · [2025](#2025) · [2024](#2024) · [2023](#2023)
 
@@ -12,12 +12,15 @@
 
 **范围分类：** **Core** = 行走、跑步、落足规划、地形穿越、平衡与恢复；**Enabling** = 动作跟踪与重定向、状态估计、数据集及学习/控制方法；**Related** = 导航、移动操作、非步行移动，以及在人形机器人移动任务上评估的通用机器人控制方法。分类依据论文的主要贡献，而非其全部实验。
 
-已确认的会议与期刊条目仅标注名称和年份，研讨会（Workshop）论文单独标注。**—** 表示尚未确认发表场所（包括已投稿和审稿中的论文），并不代表未发表。书目信息截至：2026-11-18。
+已确认的会议与期刊条目仅标注名称和年份，研讨会（Workshop）论文单独标注。**—** 表示尚未确认发表场所（包括已投稿和审稿中的论文），并不代表未发表。书目信息截至：2026-11-19。
 
 ## 2026
 
 | 论文 | 范围 | 会议·期刊 | 一句话概述 | 资源 |
 | :--- | :--- | :--- | :--- | :--- |
+| [**Z-sight:** Unifying Vision-Language-Action and Latent World Modeling](https://arxiv.org/abs/2611.24940) | Related | — | 在 VLM 原生视觉 token 空间中联合预测未来视觉特征与动作，并通过预训练的 SONIC 全身跟踪器执行，在 SIMPLE 上达到 81.9% 的成功率、在实体 G1 六项任务中平均达到 73.3%，其中四项涉及移动。 | [arXiv 2026.11](https://arxiv.org/abs/2611.24940)<br>[项目](https://junjieye.com/Z-sight/) |
+| [**SemPhys:** Semantic-Physical Co-Learning for Humanoid Motion Generation via Differentiable World Models](https://arxiv.org/abs/2611.24074) | Enabling | — | 通过可微世界模型和冻结的全身跟踪器预测物理执行片段，将整段动作的文本语义误差反传至动作生成器，在 BONES-SEED 的 G1 仿真中实现执行动作 R@1 79.62%，并在实体 G1 上验证转身后行走。 | [arXiv 2026.11](https://arxiv.org/abs/2611.24074) |
+| [**ReLoco:** Unified Humanoid Locomotion and Fall Recovery via Behavior-Conditioned Motion Priors](https://arxiv.org/abs/2611.23916) | Core | — | 以姿态条件共享双输出 AMP 判别器和仿真精炼的参考动作，在单个本体感知策略中统一行走、跑步、起身与跌倒后恢复指令，仿真起身和推扰恢复成功率分别为 96.80% 与 96.96%，并在实体 Tiangong 3.0 上验证。 | [arXiv 2026.11](https://arxiv.org/abs/2611.23916) |
 | [Autonomous Track Racing with a Commercially Available Humanoid: System Design and Real-World Deployment](https://arxiv.org/abs/2611.22445) | Core | — | 将人体动作先验 RL 跑步策略与视觉跑道线跟踪、飞行阶段 IMU 辅助里程计及电机温度感知配速相结合，使实体 G1 参加 100、400 和 1500 米比赛，并在 1500 米项目的 35 名参赛者中排名第七。 | [arXiv 2026.11](https://arxiv.org/abs/2611.22445) |
 | [**ALERT:** Extending Humanoid Motion Trackers with a General and Lightweight Human Avoidance Pipeline](https://arxiv.org/abs/2611.22258) | Enabling | — | 通过轻量适配为预训练全身动作跟踪器加入人体感知与主动避让，在仿真和实体实验中实现无碰撞的局部避让、快速恢复参考动作跟踪，并保留未见动作的跟踪能力。 | [arXiv 2026.11](https://arxiv.org/abs/2611.22258) |
 | [**Driving the Style:** Velocity-Conditioned Whole-Body Control from Motion Demonstrations](https://arxiv.org/abs/2611.20888) | Core | — | 利用动作跟踪奖励和可访问参考动作的特权 critic 训练策略，actor 仅接收速度指令与本体感知，在未见速度指令的仿真测试中成功率至少达 98%，实体 G1 试验全部成功。 | [arXiv 2026.11](https://arxiv.org/abs/2611.20888) |

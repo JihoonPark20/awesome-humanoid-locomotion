@@ -4,7 +4,7 @@
 
 ![휴머노이드 보행 티저 이미지](resource/teaser.png)
 
-휴머노이드·이족 이동 기술과 관련 연구 **282편**의 핵심 방법과 결과를 연도별로 정리했습니다.
+휴머노이드·이족 이동 기술과 관련 연구 **285편**의 핵심 방법과 결과를 연도별로 정리했습니다.
 
 [2026](#2026) · [2025](#2025) · [2024](#2024) · [2023](#2023)
 
@@ -12,12 +12,15 @@
 
 **Scope 분류:** **Core** = 보행·달리기·발 디딤·지형 통과·균형·회복, **Enabling** = 모션 추종·리타기팅·상태 추정·데이터셋·학습/제어 방법론, **Related** = 내비게이션·이동·조작·비보행 이동·휴머노이드 이동을 평가한 범용 로봇 제어. 논문의 모든 실험이 아닌 주된 기여를 기준으로 분류합니다.
 
-확인된 학회·저널은 이름과 연도만 표기하고, 워크숍(Workshop) 논문만 구분합니다. **—**는 게재처 미확인(투고·심사 중 포함)을 뜻하며, 미출판 논문이라는 의미는 아닙니다. 서지 정보 기준: 2026-11-18.
+확인된 학회·저널은 이름과 연도만 표기하고, 워크숍(Workshop) 논문만 구분합니다. **—**는 게재처 미확인(투고·심사 중 포함)을 뜻하며, 미출판 논문이라는 의미는 아닙니다. 서지 정보 기준: 2026-11-19.
 
 ## 2026
 
 | 논문 | Scope | 학회·저널 | 핵심 한 줄 | 자료 |
 | :--- | :--- | :--- | :--- | :--- |
+| [**Z-sight:** Unifying Vision-Language-Action and Latent World Modeling](https://arxiv.org/abs/2611.24940) | Related | — | VLM 내부 시각 토큰 공간에서 미래 특징과 행동을 함께 예측하고 사전학습된 SONIC 전신 추종기로 실행해, SIMPLE 성공률 81.9%와 실제 G1의 6개 과제 평균 73.3%를 기록했으며 그중 4개는 이동을 포함한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.24940)<br>[프로젝트](https://junjieye.com/Z-sight/) |
+| [**SemPhys:** Semantic-Physical Co-Learning for Humanoid Motion Generation via Differentiable World Models](https://arxiv.org/abs/2611.24074) | Enabling | — | 고정된 전신 추종기의 물리적 실행 결과를 미분 가능한 월드모델로 예측하고 전체 궤적의 텍스트–동작 의미 오차를 모션 생성기에 역전파해, BONES-SEED 기반 G1 시뮬레이션의 실행 동작 R@1 79.62%와 실제 G1의 회전 후 보행을 검증한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.24074) |
+| [**ReLoco:** Unified Humanoid Locomotion and Fall Recovery via Behavior-Conditioned Motion Priors](https://arxiv.org/abs/2611.23916) | Core | — | 자세 조건부 공유 2-head AMP 판별기와 시뮬레이션에서 보정한 참조 동작으로 걷기·달리기·기립·낙상 후 명령 복귀를 하나의 고유감각 정책에 학습시켜, 시뮬레이션에서 기립 96.80%·밀침 회복 96.96% 성공률과 실제 Tiangong 3.0 시연을 보인다. | [arXiv 2026.11](https://arxiv.org/abs/2611.23916) |
 | [Autonomous Track Racing with a Commercially Available Humanoid: System Design and Real-World Deployment](https://arxiv.org/abs/2611.22445) | Core | — | 인간 동작 prior로 학습한 RL 달리기 정책에 차선 인식·추종, 비행 구간용 IMU 보조 오도메트리와 모터 온도 기반 속도 조절을 결합해, 실제 G1이 100·400·1500 m 트랙 경기에 참가하고 1500 m에서 35팀 중 7위를 기록했다. | [arXiv 2026.11](https://arxiv.org/abs/2611.22445) |
 | [**ALERT:** Extending Humanoid Motion Trackers with a General and Lightweight Human Avoidance Pipeline](https://arxiv.org/abs/2611.22258) | Enabling | — | 사전학습된 전신 모션 추종기에 경량 적응으로 사람 인식과 선제적 회피를 추가해, 미학습 동작 추종 능력을 유지하면서 충돌 없이 주변 사람을 피하고 참조 동작으로 빠르게 복귀함을 시뮬레이션·실기에서 보였다. | [arXiv 2026.11](https://arxiv.org/abs/2611.22258) |
 | [**Driving the Style:** Velocity-Conditioned Whole-Body Control from Motion Demonstrations](https://arxiv.org/abs/2611.20888) | Core | — | 동작 추종 보상과 참조 동작을 보는 특권 critic으로 학습하되 actor에는 속도 명령과 고유감각만 제공해, 미학습 속도 명령에서 시뮬레이션 성공률 98% 이상과 실물 G1의 전 시험 성공을 보였다. | [arXiv 2026.11](https://arxiv.org/abs/2611.20888) |

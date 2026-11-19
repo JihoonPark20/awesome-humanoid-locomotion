@@ -4,7 +4,7 @@
 
 ![Humanoid locomotion teaser](resource/teaser.png)
 
-A curated year-by-year collection of **282 papers** on humanoid locomotion and related work, with a one-sentence summary of each.
+A curated year-by-year collection of **285 papers** on humanoid locomotion and related work, with a one-sentence summary of each.
 
 [2026](#2026) · [2025](#2025) · [2024](#2024) · [2023](#2023)
 
@@ -12,12 +12,15 @@ Papers are grouped by conference year or journal issue year; works without a con
 
 **Scope:** **Core** = walking/running, foothold planning, terrain traversal, balance and recovery; **Enabling** = motion tracking/retargeting, estimation, datasets and learning/control methods; **Related** = navigation, loco-manipulation, non-walking mobility and general robot-control methods evaluated on humanoid mobility. Categories reflect the main contribution, not every experiment.
 
-Confirmed conference and journal entries show only the venue name and year; workshop papers are labeled separately. **—** means no confirmed venue (including submissions and works under review), not that the work is unpublished. Bibliographic snapshot: 2026-11-18.
+Confirmed conference and journal entries show only the venue name and year; workshop papers are labeled separately. **—** means no confirmed venue (including submissions and works under review), not that the work is unpublished. Bibliographic snapshot: 2026-11-19.
 
 ## 2026
 
 | Paper | Scope | Venue | One-line takeaway | Resources |
 | :--- | :--- | :--- | :--- | :--- |
+| [**Z-sight:** Unifying Vision-Language-Action and Latent World Modeling](https://arxiv.org/abs/2611.24940) | Related | — | A VLA jointly predicts future visual tokens and actions in its native feature space, using a pretrained SONIC whole-body tracker for execution; it reaches 81.9% success on SIMPLE and 73.3% across six physical G1 tasks, four involving locomotion. | [arXiv 2026.11](https://arxiv.org/abs/2611.24940)<br>[Project](https://junjieye.com/Z-sight/) |
+| [**SemPhys:** Semantic-Physical Co-Learning for Humanoid Motion Generation via Differentiable World Models](https://arxiv.org/abs/2611.24074) | Enabling | — | A differentiable world-model surrogate backpropagates full-trajectory text–motion alignment through a frozen tracker to adapt a motion generator, achieving 79.62% executed-motion R@1 on BONES-SEED in G1 simulation and demonstrating turn-then-walk behavior on a physical G1. | [arXiv 2026.11](https://arxiv.org/abs/2611.24074) |
+| [**ReLoco:** Unified Humanoid Locomotion and Fall Recovery via Behavior-Conditioned Motion Priors](https://arxiv.org/abs/2611.23916) | Core | — | A posture-conditioned two-head adversarial motion prior and simulator-refined references train one proprioceptive policy for walking, running, getting up and resuming commands after falls, attaining 96.80% get-up and 96.96% push-recovery success in simulation with Tiangong 3.0 hardware demonstrations. | [arXiv 2026.11](https://arxiv.org/abs/2611.23916) |
 | [Autonomous Track Racing with a Commercially Available Humanoid: System Design and Real-World Deployment](https://arxiv.org/abs/2611.22445) | Core | — | A human-motion-prior RL running policy integrates vision-based lane tracking, IMU-assisted odometry across flight phases and motor-temperature-aware pacing on a physical G1; the robot competed in 100 m, 400 m and 1500 m track events, placing seventh of 35 in the 1500 m. | [arXiv 2026.11](https://arxiv.org/abs/2611.22445) |
 | [**ALERT:** Extending Humanoid Motion Trackers with a General and Lightweight Human Avoidance Pipeline](https://arxiv.org/abs/2611.22258) | Enabling | — | Lightweight adaptation adds human perception and proactive avoidance to pretrained whole-body trackers, enabling collision-free local avoidance and rapid return to reference tracking while retaining unseen-motion capabilities in simulation and on real humanoids. | [arXiv 2026.11](https://arxiv.org/abs/2611.22258) |
 | [**Driving the Style:** Velocity-Conditioned Whole-Body Control from Motion Demonstrations](https://arxiv.org/abs/2611.20888) | Core | — | Tracking rewards and a privileged critic train a velocity-commanded humanoid policy without supplying reference trajectories to the actor; it achieves at least 98% success on held-out simulated commands and completes all physical G1 trials. | [arXiv 2026.11](https://arxiv.org/abs/2611.20888) |
