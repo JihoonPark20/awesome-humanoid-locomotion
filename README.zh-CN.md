@@ -4,7 +4,7 @@
 
 ![人形机器人移动预览图](resource/teaser.png)
 
-按年份整理的 **285 篇**人形机器人及双足移动技术相关论文，每篇附有一句话概述，介绍核心方法与结果。
+按年份整理的 **287 篇**人形机器人及双足移动技术相关论文，每篇附有一句话概述，介绍核心方法与结果。
 
 [2026](#2026) · [2025](#2025) · [2024](#2024) · [2023](#2023)
 
@@ -12,12 +12,14 @@
 
 **范围分类：** **Core** = 行走、跑步、落足规划、地形穿越、平衡与恢复；**Enabling** = 动作跟踪与重定向、状态估计、数据集及学习/控制方法；**Related** = 导航、移动操作、非步行移动，以及在人形机器人移动任务上评估的通用机器人控制方法。分类依据论文的主要贡献，而非其全部实验。
 
-已确认的会议与期刊条目仅标注名称和年份，研讨会（Workshop）论文单独标注。**—** 表示尚未确认发表场所（包括已投稿和审稿中的论文），并不代表未发表。书目信息截至：2026-11-19。
+已确认的会议与期刊条目仅标注名称和年份，研讨会（Workshop）论文单独标注。**—** 表示尚未确认发表场所（包括已投稿和审稿中的论文），并不代表未发表。书目信息截至：2026-11-20。
 
 ## 2026
 
 | 论文 | 范围 | 会议·期刊 | 一句话概述 | 资源 |
 | :--- | :--- | :--- | :--- | :--- |
+| [Reference-Free Humanoid Skateboarding via Termination-Shaped Reinforcement Learning](https://arxiv.org/abs/2611.26054) | Related | [Humanoids 2026](https://arxiv.org/abs/2611.26054) | 无需人体动作示范或解析转向模型，通过任务奖励和针对失败行为的提前终止条件训练滑板推进，并在 MuJoCo 中让 Booster K1 单脚踩板、另一脚蹬地移动。 | [arXiv 2026.11](https://arxiv.org/abs/2611.26054) |
+| [**ECHO:** In-Context Behavior foundation model for Humanoid Whole-Body Control](https://arxiv.org/abs/2611.25778) | Enabling | — | 冻结预训练全身行为策略，根据交互历史推断动力学并通过残差动作适应变化，使实体 G1 在特技动作、地形接触和负载变化中无需测试时更新权重即可调整控制。 | [arXiv 2026.11](https://arxiv.org/abs/2611.25778)<br>[项目](https://mwondering.github.io/echo-bfm/) |
 | [**Z-sight:** Unifying Vision-Language-Action and Latent World Modeling](https://arxiv.org/abs/2611.24940) | Related | — | 在 VLM 原生视觉 token 空间中联合预测未来视觉特征与动作，并通过预训练的 SONIC 全身跟踪器执行，在 SIMPLE 上达到 81.9% 的成功率、在实体 G1 六项任务中平均达到 73.3%，其中四项涉及移动。 | [arXiv 2026.11](https://arxiv.org/abs/2611.24940)<br>[项目](https://junjieye.com/Z-sight/) |
 | [**SemPhys:** Semantic-Physical Co-Learning for Humanoid Motion Generation via Differentiable World Models](https://arxiv.org/abs/2611.24074) | Enabling | — | 通过可微世界模型和冻结的全身跟踪器预测物理执行片段，将整段动作的文本语义误差反传至动作生成器，在 BONES-SEED 的 G1 仿真中实现执行动作 R@1 79.62%，并在实体 G1 上验证转身后行走。 | [arXiv 2026.11](https://arxiv.org/abs/2611.24074) |
 | [**ReLoco:** Unified Humanoid Locomotion and Fall Recovery via Behavior-Conditioned Motion Priors](https://arxiv.org/abs/2611.23916) | Core | — | 以姿态条件共享双输出 AMP 判别器和仿真精炼的参考动作，在单个本体感知策略中统一行走、跑步、起身与跌倒后恢复指令，仿真起身和推扰恢复成功率分别为 96.80% 与 96.96%，并在实体 Tiangong 3.0 上验证。 | [arXiv 2026.11](https://arxiv.org/abs/2611.23916) |
