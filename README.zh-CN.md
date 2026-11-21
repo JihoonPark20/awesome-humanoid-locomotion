@@ -4,7 +4,7 @@
 
 ![人形机器人移动预览图](resource/teaser.png)
 
-按年份整理的 **287 篇**人形机器人及双足移动技术相关论文，每篇附有一句话概述，介绍核心方法与结果。
+按年份整理的 **288 篇**人形机器人及双足移动技术相关论文，每篇附有一句话概述，介绍核心方法与结果。
 
 [2026](#2026) · [2025](#2025) · [2024](#2024) · [2023](#2023)
 
@@ -33,6 +33,7 @@
 | [**ImpedanceMimic:** Learned Impedance as Action Space for Force-Accurate Motion Imitation](https://arxiv.org/abs/2611.19153) | Enabling | — | 以 RL 策略自适应调节关节刚度、阻尼和目标位置，替代固定增益 PD 跟踪，同时提高动作与接触力重现精度，并从生物力学模型零样本迁移至人形机器人。 | [arXiv 2026.11](https://arxiv.org/abs/2611.19153) |
 | [Leaning Over to Reach Far-Away Objects](https://arxiv.org/abs/2611.19100) | Related | — | 采样式全身 MPC 利用环境支撑维持平衡，使实体 H1-2 的可达距离较无外部支撑的站立姿态增加约 50 cm，并完成伸手触及与姿态恢复。 | [arXiv 2026.11](https://arxiv.org/abs/2611.19100)<br>[项目](https://h12leaner.github.io/) |
 | [Reusing Locomotion Training Recipes Across Humanoids via Body-Aligned Virtual Joints](https://arxiv.org/abs/2611.18003) | Core | — | 通过身体对齐的虚拟关节空间统一不同人形机器人的策略观测与动作，使同一套 RL 训练配置适用于三种机器人，并将实体 G1 的航向漂移降低近六倍。 | [arXiv 2026.11](https://arxiv.org/abs/2611.18003) |
+| [**Elastra:** A Simulation Framework for Elastic Bodies](https://arxiv.org/abs/2611.15112) | Core | [CoRL 2026 Workshop (Loco-Manipulation)](https://contact-rich-loco-manipulation.github.io/) | MuJoCo 弹性表面仿真框架，可模拟床垫、蹦床等受力会下陷回弹的支撑面，并用真实床垫的载荷曲线验证；附带在弹性表面上训练机器人（如 Unitree G1 起身）的示例。 | [arXiv 2026.11](https://arxiv.org/abs/2611.15112)<br>[代码](https://github.com/WhymustIhaveaname/elastra) |
 | [**LHNav:** Long-Horizon Humanoid Navigation via Multirate Coordination and Physics-Grounded Action Data](https://arxiv.org/abs/2611.12136) | Related | — | 异步任务推理、局部动作生成与全身执行利用符合物理规律的示范，在长时程仿真任务中达到 75.56% 的成功率，并在实体 G1 上实现零样本多目标导航。 | [arXiv 2026.11](https://arxiv.org/abs/2611.12136)<br>[项目](https://robbyant-research.github.io/LHNav/) |
 | [**HINT-VLM:** Humanoid Interactive Navigation over Rough Terrain with Embodiment-Grounded Vision-Language Model](https://arxiv.org/abs/2611.11665) | Related | [CoRL 2026 Workshop (SISREN)](https://yzwfromk.github.io/HINT_VLM/) | 高斯过程模型利用机器人交互数据修正 VLM 对物体可移动性的预测，使实体 G1 能在崎岖地形上规划推开障碍物或绕行。 | [arXiv 2026.11](https://arxiv.org/abs/2611.11665)<br>[项目](https://yzwfromk.github.io/HINT_VLM/) |
 | [**Kimodo-Policy:** Learning Kinematic Action Models for Humanoid Loco-Manipulation](https://arxiv.org/abs/2611.11554) | Related | — | 冻结的文本生成动作模型结合视觉条件与根节点—躯体—手部分层控制，实现人形机器人移动操作，在 HumanoidArena 中成功率达 72.14%，在八项实体任务中达 60%。 | [arXiv 2026.11](https://arxiv.org/abs/2611.11554)<br>[项目](https://kimodo-policy.github.io/) |

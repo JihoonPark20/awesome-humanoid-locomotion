@@ -4,7 +4,7 @@
 
 ![휴머노이드 보행 티저 이미지](resource/teaser.png)
 
-휴머노이드·이족 이동 기술과 관련 연구 **287편**의 핵심 방법과 결과를 연도별로 정리했습니다.
+휴머노이드·이족 이동 기술과 관련 연구 **288편**의 핵심 방법과 결과를 연도별로 정리했습니다.
 
 [2026](#2026) · [2025](#2025) · [2024](#2024) · [2023](#2023)
 
@@ -33,6 +33,7 @@
 | [**ImpedanceMimic:** Learned Impedance as Action Space for Force-Accurate Motion Imitation](https://arxiv.org/abs/2611.19153) | Enabling | — | 고정 PD gain 대신 RL 정책이 관절 강성·감쇠·목표 위치를 조절해 동작과 접촉력을 함께 재현하고, 생체역학 모델에서 휴머노이드로 제로샷 전이한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.19153) |
 | [Leaning Over to Reach Far-Away Objects](https://arxiv.org/abs/2611.19100) | Related | — | 샘플링 기반 전신 MPC로 주변 환경을 손으로 짚어 균형을 유지하면서, 실물 H1-2의 도달 거리를 비지지 선 자세보다 약 50 cm 늘리고 동작 후 회복까지 수행한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.19100)<br>[프로젝트](https://h12leaner.github.io/) |
 | [Reusing Locomotion Training Recipes Across Humanoids via Body-Aligned Virtual Joints](https://arxiv.org/abs/2611.18003) | Core | — | 로봇마다 다른 관절 좌표계를 몸체 기준 가상 관절 공간으로 통일해 동일한 RL 보행 학습 설정을 휴머노이드 3종에 재사용하고, 실제 G1의 진행 방향 드리프트를 약 6배 줄였다. | [arXiv 2026.11](https://arxiv.org/abs/2611.18003) |
+| [**Elastra:** A Simulation Framework for Elastic Bodies](https://arxiv.org/abs/2611.15112) | Core | [CoRL 2026 Workshop (Loco-Manipulation)](https://contact-rich-loco-manipulation.github.io/) | 하중을 받으면 가라앉았다가 반발하는 매트리스·트램펄린 같은 지지면을 시뮬레이션하고, 실제 매트리스 하중 곡선으로 검증하는 MuJoCo 탄성 표면 시뮬레이션 프레임워크이며, 탄성 표면에서 로봇을 학습시키는 예시(예: Unitree G1 일어서기)를 포함한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.15112)<br>[코드](https://github.com/WhymustIhaveaname/elastra) |
 | [**LHNav:** Long-Horizon Humanoid Navigation via Multirate Coordination and Physics-Grounded Action Data](https://arxiv.org/abs/2611.12136) | Related | — | 비동기 과제 추론·국소 동작 생성·전신 제어를 물리적으로 보정한 시범 데이터와 결합해, 장기 내비게이션 시뮬레이션 성공률 75.56%와 실제 G1의 다중 목표 제로샷 이동을 보였다. | [arXiv 2026.11](https://arxiv.org/abs/2611.12136)<br>[프로젝트](https://robbyant-research.github.io/LHNav/) |
 | [**HINT-VLM:** Humanoid Interactive Navigation over Rough Terrain with Embodiment-Grounded Vision-Language Model](https://arxiv.org/abs/2611.11665) | Related | [CoRL 2026 Workshop (SISREN)](https://yzwfromk.github.io/HINT_VLM/) | 로봇의 실제 물체 상호작용 기록으로 VLM의 이동 가능성 예측을 가우시안 프로세스로 보정해, 실제 G1이 험지에서 장애물을 밀지 우회할지 계획한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.11665)<br>[프로젝트](https://yzwfromk.github.io/HINT_VLM/) |
 | [**Kimodo-Policy:** Learning Kinematic Action Models for Humanoid Loco-Manipulation](https://arxiv.org/abs/2611.11554) | Related | — | 동결된 텍스트-동작 생성기에 시각 조건과 몸통 이동·전신·손의 계층형 제어를 결합해, 이동·조작 과제에서 HumanoidArena 성공률 72.14%와 실기 8개 과제 평균 60%를 달성한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.11554)<br>[프로젝트](https://kimodo-policy.github.io/) |
