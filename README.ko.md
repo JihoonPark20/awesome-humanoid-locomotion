@@ -4,7 +4,7 @@
 
 ![휴머노이드 보행 티저 이미지](resource/teaser.png)
 
-휴머노이드·이족 이동 기술과 관련 연구 **287편**의 핵심 방법과 결과를 연도별로 정리했습니다.
+휴머노이드·이족 이동 기술과 관련 연구 **292편**의 핵심 방법과 결과를 연도별로 정리했습니다.
 
 [2026](#2026) · [2025](#2025) · [2024](#2024) · [2023](#2023)
 
@@ -12,12 +12,17 @@
 
 **Scope 분류:** **Core** = 보행·달리기·발 디딤·지형 통과·균형·회복, **Enabling** = 모션 추종·리타기팅·상태 추정·데이터셋·학습/제어 방법론, **Related** = 내비게이션·이동·조작·비보행 이동·휴머노이드 이동을 평가한 범용 로봇 제어. 논문의 모든 실험이 아닌 주된 기여를 기준으로 분류합니다.
 
-확인된 학회·저널은 이름과 연도만 표기하고, 워크숍(Workshop) 논문만 구분합니다. **—**는 게재처 미확인(투고·심사 중 포함)을 뜻하며, 미출판 논문이라는 의미는 아닙니다. 서지 정보 기준: 2026-11-20.
+확인된 학회·저널은 이름과 연도만 표기하고, 워크숍(Workshop) 논문만 구분합니다. **—**는 게재처 미확인(투고·심사 중 포함)을 뜻하며, 미출판 논문이라는 의미는 아닙니다. 서지 정보 기준: 2026-11-25.
 
 ## 2026
 
 | 논문 | Scope | 학회·저널 | 핵심 한 줄 | 자료 |
 | :--- | :--- | :--- | :--- | :--- |
+| [Beyond Domain Randomization: Real-World Policy Adaptation in Learned Dynamics for Legged Robots](https://arxiv.org/abs/2611.30784) | Core | — | 학습된 동역학 모델과 보행 정책을 동시 교사–학생 구조로 목표 환경의 실제 동역학에 함께 적응시키는 온폴리시 RL 파이프라인으로, 자체 중량의 80%에 이르는 하중과 기름을 바른 저마찰 바닥 같은 극단적 변화에서도 이족 보행 과제의 적응 성능을 보였다. | [arXiv 2026.11](https://arxiv.org/abs/2611.30784) |
+| [**CHAMP:** Coordinated Humanoid Loco-Manipulation with Whole-Body Motion Priors](https://arxiv.org/abs/2611.30449) | Related | — | 인간·로봇 데이터 약 2,298시간으로 미래 몸통·손 동작을 예측하도록 사전학습한 VLM의 여러 층 특징을 희소 라우팅 행동 전문가가 융합해 몸과 손 행동을 함께 생성하며, 시뮬레이션 7개 과제에서 84.8%, 실제 G1 7개 과제에서 91.4%의 성공률을 보였다. | [arXiv 2026.11](https://arxiv.org/abs/2611.30449) |
+| [**PushMimic:** Learning Adaptive Humanoid Box Pushing via Dynamic Motion Augmentation and Reference Distillation](https://arxiv.org/abs/2611.30077) | Related | — | 평지에서 얻은 밀기 참조 동작 하나를 샘플링 기반 궤적 최적화로 상자 질량·경사별 동역학적으로 실현 가능한 데이터로 확장해 단일 추종 정책에 증류하며, 시뮬레이션 성공률을 57.8%에서 88.8%로 높이고 실제 G1이 경사 트레드밀에서 최대 19 kg 상자를 밀며 몸통 기울기를 조절한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.30077)<br>[프로젝트](https://silvery107.github.io/pushmimic/) |
+| [**Motion Mamba 2.0:** Autoregressive Diffusion Mamba for Long-Horizon Humanoid Control](https://arxiv.org/abs/2611.29897) | Enabling | — | 재개 가능한 순환 상태와 지속 콘텐츠 메모리를 갖춘 Mamba 기반 루트–몸체 확산 모델로 텍스트·키보드 조건의 장기 휴머노이드 동작을 생성해, HiPHI에서 최대 39.52초 롤아웃의 정확한 종단 제어와 RTX 4090 기준 약 6배의 중앙값 지연 단축을 보이고 실제 G1에서 대화형 보행을 시연한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.29897)<br>[프로젝트](https://aigeeksgroup.github.io/MotionMamba2.0)<br>[코드](https://github.com/AIGeeksGroup/MotionMamba2.0) |
+| [**ζ0:** A Framework for World Action Models with Joint Scene and Body Foresight in Humanoid Control](https://arxiv.org/abs/2611.29277) | Related | — | 실제 미래로 조건화된 교사가 학습 중 인과적 예측기를 지도해 미래 시각 특징과 실측 관절 궤적을 공유 잠재공간에서 함께 예측하게 함으로써 VLA 정책을 월드 액션 모델로 바꾸고, Ψ0와 GR00T N1.7 기반 정책을 HumanoidArena 7개 과제와 실제 6개 과제에서 개선한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.29277)<br>[프로젝트](https://chenyizhi123.github.io/zeta0-project/)<br>[코드](https://github.com/chenyizhi123/Zeta0) |
 | [Reference-Free Humanoid Skateboarding via Termination-Shaped Reinforcement Learning](https://arxiv.org/abs/2611.26054) | Related | [Humanoids 2026](https://arxiv.org/abs/2611.26054) | 인간 동작 시범이나 조향 모델 없이 보상과 실패 행동을 차단하는 조기 종료 조건으로 스케이트보드 추진을 학습해, MuJoCo의 Booster K1이 한 발을 보드에 올리고 다른 발로 지면을 미는 이동을 보였다. | [arXiv 2026.11](https://arxiv.org/abs/2611.26054) |
 | [**ECHO:** In-Context Behavior foundation model for Humanoid Whole-Body Control](https://arxiv.org/abs/2611.25778) | Enabling | — | 사전학습한 기본 전신 정책을 고정하고 상호작용 이력에서 동역학을 추론해 잔차 행동으로 보정함으로써, 실제 G1의 곡예·지형 접촉·하중 변화에 실행 중 가중치 갱신 없이 적응한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.25778)<br>[프로젝트](https://mwondering.github.io/echo-bfm/) |
 | [**Z-sight:** Unifying Vision-Language-Action and Latent World Modeling](https://arxiv.org/abs/2611.24940) | Related | — | VLM 내부 시각 토큰 공간에서 미래 특징과 행동을 함께 예측하고 사전학습된 SONIC 전신 추종기로 실행해, SIMPLE 성공률 81.9%와 실제 G1의 6개 과제 평균 73.3%를 기록했으며 그중 4개는 이동을 포함한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.24940)<br>[프로젝트](https://junjieye.com/Z-sight/) |
