@@ -4,7 +4,7 @@
 
 ![휴머노이드 보행 티저 이미지](resource/teaser.png)
 
-휴머노이드·이족 이동 기술과 관련 연구 **292편**의 핵심 방법과 결과를 연도별로 정리했습니다.
+휴머노이드·이족 이동 기술과 관련 연구 **297편**의 핵심 방법과 결과를 연도별로 정리했습니다.
 
 [2026](#2026) · [2025](#2025) · [2024](#2024) · [2023](#2023)
 
@@ -12,12 +12,17 @@
 
 **Scope 분류:** **Core** = 보행·달리기·발 디딤·지형 통과·균형·회복, **Enabling** = 모션 추종·리타기팅·상태 추정·데이터셋·학습/제어 방법론, **Related** = 내비게이션·이동·조작·비보행 이동·휴머노이드 이동을 평가한 범용 로봇 제어. 논문의 모든 실험이 아닌 주된 기여를 기준으로 분류합니다.
 
-확인된 학회·저널은 이름과 연도만 표기하고, 워크숍(Workshop) 논문만 구분합니다. **—**는 게재처 미확인(투고·심사 중 포함)을 뜻하며, 미출판 논문이라는 의미는 아닙니다. 서지 정보 기준: 2026-11-25.
+확인된 학회·저널은 이름과 연도만 표기하고, 워크숍(Workshop) 논문만 구분합니다. **—**는 게재처 미확인(투고·심사 중 포함)을 뜻하며, 미출판 논문이라는 의미는 아닙니다. 서지 정보 기준: 2026-11-26.
 
 ## 2026
 
 | 논문 | Scope | 학회·저널 | 핵심 한 줄 | 자료 |
 | :--- | :--- | :--- | :--- | :--- |
+| [**DynaMimic:** A Physics-Informed World Model for Humanoid Motion Tracking](https://arxiv.org/abs/2611.32944) | Enabling | — | 후보 지지 링크별 접촉 렌치와 잔여 일반화 힘을 예측한 뒤 닫힌 형태의 라그랑주 순동역학으로 다음 상태를 계산하는 미분 가능 월드모델로, LAFAN1 60개 동작에서 SuperMimic 대비 MPJPE를 18.6%, A3 Parkour 지형 추종에서 14.9% 줄이고 실제 A3 휴머노이드에서 바닥 기립·옆돌기·박스 뛰어넘기를 수행한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.32944) |
+| [**DiffGR00T:** Execution-Aware Differentiable Training for Humanoid Whole-Body Vision-Language-Action Models](https://arxiv.org/abs/2611.32665) | Related | — | 시뮬레이터를 행동 조건부 학습 월드모델로 대체해 다단계 실행 손실을 고정된 SONIC 전신 제어기와 flow-matching 샘플러를 거쳐 GR00T N1.7 행동 헤드까지 역전파함으로써, HumanoidArena 시뮬레이션 4개 과제의 평균 성공률을 59.2%에서 71.7%로 높인다. | [arXiv 2026.11](https://arxiv.org/abs/2611.32665) |
+| [**BARE:** Body-Aware Reflexive Evasion for Humanoid Robots](https://arxiv.org/abs/2611.32642) | Core | — | 위협받는 신체 부위에 따라 리타기팅된 인간 회피 동작을 고르고 충돌 긴급도에 맞춰 시간을 조정하는 위험 인지 어댑터와, 링크별 충돌 위험을 입력받는 RL 정책으로 빠른 국소 회피와 전신 균형을 함께 유지함을 시뮬레이션·실기에서 보인다. | [arXiv 2026.11](https://arxiv.org/abs/2611.32642) |
+| [**EgoLoAF:** Learning Humanoid Loco-Manipulation from Egocentric Demonstrations with Hand-Object Affordances](https://arxiv.org/abs/2611.32260) | Related | — | 카메라 자세로 몸통 이동을, 영상에서 양손 궤적을 복원하고 손–물체 어포던스를 교차 어텐션으로 행동 전문가에 주입해 착용형 추적기·원격조작 데이터 없이 1인칭 인간 영상만으로 휴머노이드 이동·조작 VLA를 학습하며, 실제 4개 과제에서 원격조작에 근접한 과제 진행 점수(73.1 대 74.4)와 4.03배의 데이터 수집 효율을 보이고 약 1,000시간의 시연 데이터를 공개한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.32260) |
+| [**Ada-BFM:** Adapting Behavior Foundation Models for Humanoid Scene Interaction](https://arxiv.org/abs/2611.31863) | Enabling | — | 사전학습된 행동 파운데이션 모델에 경량 어댑터를 붙여 지형·물체 상호작용 도메인마다 하나의 공유 정책으로 후학습하며, 처음부터 학습하는 것보다 빠르게 익히면서 기존 전신 제어 능력을 대부분 유지함을 시뮬레이션·실기에서 보인다. | [arXiv 2026.11](https://arxiv.org/abs/2611.31863) |
 | [Beyond Domain Randomization: Real-World Policy Adaptation in Learned Dynamics for Legged Robots](https://arxiv.org/abs/2611.30784) | Core | — | 학습된 동역학 모델과 보행 정책을 동시 교사–학생 구조로 목표 환경의 실제 동역학에 함께 적응시키는 온폴리시 RL 파이프라인으로, 자체 중량의 80%에 이르는 하중과 기름을 바른 저마찰 바닥 같은 극단적 변화에서도 이족 보행 과제의 적응 성능을 보였다. | [arXiv 2026.11](https://arxiv.org/abs/2611.30784) |
 | [**CHAMP:** Coordinated Humanoid Loco-Manipulation with Whole-Body Motion Priors](https://arxiv.org/abs/2611.30449) | Related | — | 인간·로봇 데이터 약 2,298시간으로 미래 몸통·손 동작을 예측하도록 사전학습한 VLM의 여러 층 특징을 희소 라우팅 행동 전문가가 융합해 몸과 손 행동을 함께 생성하며, 시뮬레이션 7개 과제에서 84.8%, 실제 G1 7개 과제에서 91.4%의 성공률을 보였다. | [arXiv 2026.11](https://arxiv.org/abs/2611.30449) |
 | [**PushMimic:** Learning Adaptive Humanoid Box Pushing via Dynamic Motion Augmentation and Reference Distillation](https://arxiv.org/abs/2611.30077) | Related | — | 평지에서 얻은 밀기 참조 동작 하나를 샘플링 기반 궤적 최적화로 상자 질량·경사별 동역학적으로 실현 가능한 데이터로 확장해 단일 추종 정책에 증류하며, 시뮬레이션 성공률을 57.8%에서 88.8%로 높이고 실제 G1이 경사 트레드밀에서 최대 19 kg 상자를 밀며 몸통 기울기를 조절한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.30077)<br>[프로젝트](https://silvery107.github.io/pushmimic/) |

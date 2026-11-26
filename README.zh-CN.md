@@ -4,7 +4,7 @@
 
 ![人形机器人移动预览图](resource/teaser.png)
 
-按年份整理的 **292 篇**人形机器人及双足移动技术相关论文，每篇附有一句话概述，介绍核心方法与结果。
+按年份整理的 **297 篇**人形机器人及双足移动技术相关论文，每篇附有一句话概述，介绍核心方法与结果。
 
 [2026](#2026) · [2025](#2025) · [2024](#2024) · [2023](#2023)
 
@@ -12,12 +12,17 @@
 
 **范围分类：** **Core** = 行走、跑步、落足规划、地形穿越、平衡与恢复；**Enabling** = 动作跟踪与重定向、状态估计、数据集及学习/控制方法；**Related** = 导航、移动操作、非步行移动，以及在人形机器人移动任务上评估的通用机器人控制方法。分类依据论文的主要贡献，而非其全部实验。
 
-已确认的会议与期刊条目仅标注名称和年份，研讨会（Workshop）论文单独标注。**—** 表示尚未确认发表场所（包括已投稿和审稿中的论文），并不代表未发表。书目信息截至：2026-11-25。
+已确认的会议与期刊条目仅标注名称和年份，研讨会（Workshop）论文单独标注。**—** 表示尚未确认发表场所（包括已投稿和审稿中的论文），并不代表未发表。书目信息截至：2026-11-26。
 
 ## 2026
 
 | 论文 | 范围 | 会议·期刊 | 一句话概述 | 资源 |
 | :--- | :--- | :--- | :--- | :--- |
+| [**DynaMimic:** A Physics-Informed World Model for Humanoid Motion Tracking](https://arxiv.org/abs/2611.32944) | Enabling | — | 可微世界模型为各候选支撑连杆预测接触力旋量与残余广义力，再通过闭式拉格朗日正向动力学计算下一状态，在 60 段 LAFAN1 动作上较 SuperMimic 将 MPJPE 降低 18.6%，在 A3 Parkour 地形跟踪中降低 14.9%，并在实体 A3 人形机器人上完成倒地起身、侧手翻和跳箱。 | [arXiv 2026.11](https://arxiv.org/abs/2611.32944) |
+| [**DiffGR00T:** Execution-Aware Differentiable Training for Humanoid Whole-Body Vision-Language-Action Models](https://arxiv.org/abs/2611.32665) | Related | — | 以动作条件学习世界模型替代仿真器，使多步执行损失经冻结的 SONIC 全身控制器和流匹配采样器反传至 GR00T N1.7 动作头，将 HumanoidArena 四项仿真任务的平均成功率由 59.2% 提升至 71.7%。 | [arXiv 2026.11](https://arxiv.org/abs/2611.32665) |
+| [**BARE:** Body-Aware Reflexive Evasion for Humanoid Robots](https://arxiv.org/abs/2611.32642) | Core | — | 风险感知适配器根据受威胁的身体部位选取重定向的人类躲避动作，并按碰撞紧迫度调整时序，再由以各连杆碰撞风险为输入的 RL 策略协调快速局部躲避与全身平衡，在仿真和真实实验中得到验证。 | [arXiv 2026.11](https://arxiv.org/abs/2611.32642) |
+| [**EgoLoAF:** Learning Humanoid Loco-Manipulation from Egocentric Demonstrations with Hand-Object Affordances](https://arxiv.org/abs/2611.32260) | Related | — | 由相机位姿估计躯干运动、从视频重建双手轨迹，并通过交叉注意力向动作专家注入手—物体可供性特征，使 VLA 无需穿戴式追踪器和遥操作数据、仅凭第一视角人类视频即可学习人形移动操作；在四项真实任务中任务进度得分 73.1，接近遥操作的 74.4，数据采集效率平均提升 4.03 倍，并公开约 1,000 小时示范数据。 | [arXiv 2026.11](https://arxiv.org/abs/2611.32260) |
+| [**Ada-BFM:** Adapting Behavior Foundation Models for Humanoid Scene Interaction](https://arxiv.org/abs/2611.31863) | Enabling | — | 为预训练行为基础模型加装轻量适配器进行后训练，使每个交互领域只需一个共享策略即可处理地形或物体交互任务，学习速度快于从零训练，并在仿真与真实实验中基本保留原有全身控制能力。 | [arXiv 2026.11](https://arxiv.org/abs/2611.31863) |
 | [Beyond Domain Randomization: Real-World Policy Adaptation in Learned Dynamics for Legged Robots](https://arxiv.org/abs/2611.30784) | Core | — | 在同策略 RL 流程中以并行教师—学生结构，使学习的动力学模型与运动策略共同适应目标环境的实际动力学，在负载达自重 80%、涂油低摩擦地面等极端变化下的双足行走任务中展现出有竞争力的适应能力。 | [arXiv 2026.11](https://arxiv.org/abs/2611.30784) |
 | [**CHAMP:** Coordinated Humanoid Loco-Manipulation with Whole-Body Motion Priors](https://arxiv.org/abs/2611.30449) | Related | — | 利用约 2,298 小时人类与机器人数据预训练 VLM 预测未来身体与手部动作，再由稀疏路由的协调动作专家融合其多层特征、同时输出身体与手部动作，在七项仿真任务中成功率达 84.8%，在七项实体 G1 任务中达 91.4%。 | [arXiv 2026.11](https://arxiv.org/abs/2611.30449) |
 | [**PushMimic:** Learning Adaptive Humanoid Box Pushing via Dynamic Motion Augmentation and Reference Distillation](https://arxiv.org/abs/2611.30077) | Related | — | 通过基于采样的轨迹优化，将单条平地推箱参考动作扩展为覆盖不同箱体质量与坡度的动力学可行数据，并蒸馏为单一跟踪策略，使仿真成功率由 57.8% 提升至 88.8%；实体 G1 可在倾斜跑步机上推动最重 19 kg 的箱子并随之调整躯干俯仰。 | [arXiv 2026.11](https://arxiv.org/abs/2611.30077)<br>[项目](https://silvery107.github.io/pushmimic/) |
