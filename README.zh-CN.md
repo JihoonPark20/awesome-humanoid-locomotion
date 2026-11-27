@@ -4,7 +4,7 @@
 
 ![人形机器人移动预览图](resource/teaser.png)
 
-按年份整理的 **297 篇**人形机器人及双足移动技术相关论文，每篇附有一句话概述，介绍核心方法与结果。
+按年份整理的 **300 篇**人形机器人及双足移动技术相关论文，每篇附有一句话概述，介绍核心方法与结果。
 
 [2026](#2026) · [2025](#2025) · [2024](#2024) · [2023](#2023)
 
@@ -12,12 +12,15 @@
 
 **范围分类：** **Core** = 行走、跑步、落足规划、地形穿越、平衡与恢复；**Enabling** = 动作跟踪与重定向、状态估计、数据集及学习/控制方法；**Related** = 导航、移动操作、非步行移动，以及在人形机器人移动任务上评估的通用机器人控制方法。分类依据论文的主要贡献，而非其全部实验。
 
-已确认的会议与期刊条目仅标注名称和年份，研讨会（Workshop）论文单独标注。**—** 表示尚未确认发表场所（包括已投稿和审稿中的论文），并不代表未发表。书目信息截至：2026-11-26。
+已确认的会议与期刊条目仅标注名称和年份，研讨会（Workshop）论文单独标注。**—** 表示尚未确认发表场所（包括已投稿和审稿中的论文），并不代表未发表。书目信息截至：2026-11-27。
 
 ## 2026
 
 | 论文 | 范围 | 会议·期刊 | 一句话概述 | 资源 |
 | :--- | :--- | :--- | :--- | :--- |
+| [**Riding the Wave:** Sim-to-Real Humanoid Control on Elastic Terrain](https://arxiv.org/abs/2611.34569) | Core | — | RIPPLE 在 MJLab 中加入预张紧质量-弹簧膜与可变形接触来模拟弹性地面在空间上耦合的下陷与回弹，并分阶段将刚性地面技能迁移为仅依赖本体感知的平衡与跳跃，在三种弹性支撑模型上受扰站立成功率均不低于 98.7%；策略零样本部署到实体 MagicBot Z1，无需标定蹦床刚度即可保持平衡、连续跳跃并从刚性平台登上蹦床。 | [arXiv 2026.11](https://arxiv.org/abs/2611.34569)<br>[项目](https://fly-pigTH.github.io/wave_rider/) |
+| [Learning a Whole-Body Pivot-Walking Gait for Heavy-Box Transport with a Humanoid](https://arxiv.org/abs/2611.33828) | Related | [Humanoids 2026](https://arxiv.org/abs/2611.33828) | 以单一强化学习策略学习搬运无法抬起的重箱所用的枢轴行走，借助交替枢轴奖励和随箱体位移推进的相位参考协调迈步、平衡与箱体操作；微调为以周期时钟替代物体状态感知的版本后，实体人形机器人在全部 5 次试验中均将箱子向前移动超过 1 m。 | [arXiv 2026.11](https://arxiv.org/abs/2611.33828)<br>[项目](https://uni963.github.io/pivot-walking/) |
+| [An Adversarial Multi-Agent Pursuit Game for Locomotor Agility Pretraining](https://arxiv.org/abs/2611.33407) | Core | — | 在竞争性追逐游戏任务集 MJTag 中，以稀疏反馈的联赛式自博弈训练驱动底层运动控制器的角色条件策略，使仿真人形机器人自发习得闪避、冲刺和擒抱等追逃策略。 | [arXiv 2026.11](https://arxiv.org/abs/2611.33407) |
 | [**DynaMimic:** A Physics-Informed World Model for Humanoid Motion Tracking](https://arxiv.org/abs/2611.32944) | Enabling | — | 可微世界模型为各候选支撑连杆预测接触力旋量与残余广义力，再通过闭式拉格朗日正向动力学计算下一状态，在 60 段 LAFAN1 动作上较 SuperMimic 将 MPJPE 降低 18.6%，在 A3 Parkour 地形跟踪中降低 14.9%，并在实体 A3 人形机器人上完成倒地起身、侧手翻和跳箱。 | [arXiv 2026.11](https://arxiv.org/abs/2611.32944) |
 | [**DiffGR00T:** Execution-Aware Differentiable Training for Humanoid Whole-Body Vision-Language-Action Models](https://arxiv.org/abs/2611.32665) | Related | — | 以动作条件学习世界模型替代仿真器，使多步执行损失经冻结的 SONIC 全身控制器和流匹配采样器反传至 GR00T N1.7 动作头，将 HumanoidArena 四项仿真任务的平均成功率由 59.2% 提升至 71.7%。 | [arXiv 2026.11](https://arxiv.org/abs/2611.32665) |
 | [**BARE:** Body-Aware Reflexive Evasion for Humanoid Robots](https://arxiv.org/abs/2611.32642) | Core | — | 风险感知适配器根据受威胁的身体部位选取重定向的人类躲避动作，并按碰撞紧迫度调整时序，再由以各连杆碰撞风险为输入的 RL 策略协调快速局部躲避与全身平衡，在仿真和真实实验中得到验证。 | [arXiv 2026.11](https://arxiv.org/abs/2611.32642) |

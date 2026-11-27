@@ -4,7 +4,7 @@
 
 ![휴머노이드 보행 티저 이미지](resource/teaser.png)
 
-휴머노이드·이족 이동 기술과 관련 연구 **297편**의 핵심 방법과 결과를 연도별로 정리했습니다.
+휴머노이드·이족 이동 기술과 관련 연구 **300편**의 핵심 방법과 결과를 연도별로 정리했습니다.
 
 [2026](#2026) · [2025](#2025) · [2024](#2024) · [2023](#2023)
 
@@ -12,12 +12,15 @@
 
 **Scope 분류:** **Core** = 보행·달리기·발 디딤·지형 통과·균형·회복, **Enabling** = 모션 추종·리타기팅·상태 추정·데이터셋·학습/제어 방법론, **Related** = 내비게이션·이동·조작·비보행 이동·휴머노이드 이동을 평가한 범용 로봇 제어. 논문의 모든 실험이 아닌 주된 기여를 기준으로 분류합니다.
 
-확인된 학회·저널은 이름과 연도만 표기하고, 워크숍(Workshop) 논문만 구분합니다. **—**는 게재처 미확인(투고·심사 중 포함)을 뜻하며, 미출판 논문이라는 의미는 아닙니다. 서지 정보 기준: 2026-11-26.
+확인된 학회·저널은 이름과 연도만 표기하고, 워크숍(Workshop) 논문만 구분합니다. **—**는 게재처 미확인(투고·심사 중 포함)을 뜻하며, 미출판 논문이라는 의미는 아닙니다. 서지 정보 기준: 2026-11-27.
 
 ## 2026
 
 | 논문 | Scope | 학회·저널 | 핵심 한 줄 | 자료 |
 | :--- | :--- | :--- | :--- | :--- |
+| [**Riding the Wave:** Sim-to-Real Humanoid Control on Elastic Terrain](https://arxiv.org/abs/2611.34569) | Core | — | 사전 장력을 건 질량-스프링 막과 변형 접촉을 MJLab에 넣어 탄성 지면의 공간적으로 얽힌 처짐·반발을 모사하고, 강체 지면 기술을 고유수용감각만으로 균형·점프로 옮기는 단계적 학습을 적용해 세 가지 탄성 지면 모델에서 교란 하 기립 성공률 98.7% 이상을 유지하며, 실제 MagicBot Z1이 강성 보정 없이 트램펄린 위 균형·연속 점프와 강체 플랫폼에서의 진입을 수행한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.34569)<br>[프로젝트](https://fly-pigTH.github.io/wave_rider/) |
+| [Learning a Whole-Body Pivot-Walking Gait for Heavy-Box Transport with a Humanoid](https://arxiv.org/abs/2611.33828) | Related | [Humanoids 2026](https://arxiv.org/abs/2611.33828) | 들어 올릴 수 없는 무거운 상자를 번갈아 회전시키며 옮기는 피벗 보행을 단일 RL 정책으로 학습해, 교대 피벗 보상과 상자 변위에 따라 진행하는 위상 참조로 발 디딤·균형·상자 조작을 함께 조율하고, 물체 상태 대신 주기 클록을 쓰도록 미세조정한 정책으로 실제 휴머노이드가 5회 시도 모두에서 상자를 1 m 이상 전진시켰다. | [arXiv 2026.11](https://arxiv.org/abs/2611.33828)<br>[프로젝트](https://uni963.github.io/pivot-walking/) |
+| [An Adversarial Multi-Agent Pursuit Game for Locomotor Agility Pretraining](https://arxiv.org/abs/2611.33407) | Core | — | 경쟁적 술래잡기 과제 모음 MJTag에서 하위 보행 제어기를 지휘하는 역할 조건부 정책을 희소 보상 기반 리그 자기대전으로 학습해, 시뮬레이션 휴머노이드가 피하기·전력 질주·태클 같은 추격·회피 전략을 스스로 익힌다. | [arXiv 2026.11](https://arxiv.org/abs/2611.33407) |
 | [**DynaMimic:** A Physics-Informed World Model for Humanoid Motion Tracking](https://arxiv.org/abs/2611.32944) | Enabling | — | 후보 지지 링크별 접촉 렌치와 잔여 일반화 힘을 예측한 뒤 닫힌 형태의 라그랑주 순동역학으로 다음 상태를 계산하는 미분 가능 월드모델로, LAFAN1 60개 동작에서 SuperMimic 대비 MPJPE를 18.6%, A3 Parkour 지형 추종에서 14.9% 줄이고 실제 A3 휴머노이드에서 바닥 기립·옆돌기·박스 뛰어넘기를 수행한다. | [arXiv 2026.11](https://arxiv.org/abs/2611.32944) |
 | [**DiffGR00T:** Execution-Aware Differentiable Training for Humanoid Whole-Body Vision-Language-Action Models](https://arxiv.org/abs/2611.32665) | Related | — | 시뮬레이터를 행동 조건부 학습 월드모델로 대체해 다단계 실행 손실을 고정된 SONIC 전신 제어기와 flow-matching 샘플러를 거쳐 GR00T N1.7 행동 헤드까지 역전파함으로써, HumanoidArena 시뮬레이션 4개 과제의 평균 성공률을 59.2%에서 71.7%로 높인다. | [arXiv 2026.11](https://arxiv.org/abs/2611.32665) |
 | [**BARE:** Body-Aware Reflexive Evasion for Humanoid Robots](https://arxiv.org/abs/2611.32642) | Core | — | 위협받는 신체 부위에 따라 리타기팅된 인간 회피 동작을 고르고 충돌 긴급도에 맞춰 시간을 조정하는 위험 인지 어댑터와, 링크별 충돌 위험을 입력받는 RL 정책으로 빠른 국소 회피와 전신 균형을 함께 유지함을 시뮬레이션·실기에서 보인다. | [arXiv 2026.11](https://arxiv.org/abs/2611.32642) |

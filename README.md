@@ -4,7 +4,7 @@
 
 ![Humanoid locomotion teaser](resource/teaser.png)
 
-A curated year-by-year collection of **297 papers** on humanoid locomotion and related work, with a one-sentence summary of each.
+A curated year-by-year collection of **300 papers** on humanoid locomotion and related work, with a one-sentence summary of each.
 
 [2026](#2026) · [2025](#2025) · [2024](#2024) · [2023](#2023)
 
@@ -12,12 +12,15 @@ Papers are grouped by conference year or journal issue year; works without a con
 
 **Scope:** **Core** = walking/running, foothold planning, terrain traversal, balance and recovery; **Enabling** = motion tracking/retargeting, estimation, datasets and learning/control methods; **Related** = navigation, loco-manipulation, non-walking mobility and general robot-control methods evaluated on humanoid mobility. Categories reflect the main contribution, not every experiment.
 
-Confirmed conference and journal entries show only the venue name and year; workshop papers are labeled separately. **—** means no confirmed venue (including submissions and works under review), not that the work is unpublished. Bibliographic snapshot: 2026-11-26.
+Confirmed conference and journal entries show only the venue name and year; workshop papers are labeled separately. **—** means no confirmed venue (including submissions and works under review), not that the work is unpublished. Bibliographic snapshot: 2026-11-27.
 
 ## 2026
 
 | Paper | Scope | Venue | One-line takeaway | Resources |
 | :--- | :--- | :--- | :--- | :--- |
+| [**Riding the Wave:** Sim-to-Real Humanoid Control on Elastic Terrain](https://arxiv.org/abs/2611.34569) | Core | — | RIPPLE adds a pretensioned mass–spring membrane with deformable contact to MJLab and stages training from rigid-ground skills to proprioceptive balancing and jumping on elastic terrain, keeping simulated standing success at or above 98.7% under perturbations on three elastic support models; policies transfer zero-shot to a physical MagicBot Z1 that balances, jumps repeatedly and steps onto a trampoline from a rigid platform without stiffness calibration. | [arXiv 2026.11](https://arxiv.org/abs/2611.34569)<br>[Project](https://fly-pigTH.github.io/wave_rider/) |
+| [Learning a Whole-Body Pivot-Walking Gait for Heavy-Box Transport with a Humanoid](https://arxiv.org/abs/2611.33828) | Related | [Humanoids 2026](https://arxiv.org/abs/2611.33828) | One RL policy coordinates stepping, balance and box handling for pivot walking a box too heavy to lift, using alternating-pivot rewards and a phase reference that advances with box displacement; fine-tuned to run on a periodic clock instead of object-state sensing, it moves the box forward more than 1 m in all five trials on a physical humanoid. | [arXiv 2026.11](https://arxiv.org/abs/2611.33828)<br>[Project](https://uni963.github.io/pivot-walking/) |
+| [An Adversarial Multi-Agent Pursuit Game for Locomotor Agility Pretraining](https://arxiv.org/abs/2611.33407) | Core | — | In MJTag, a competitive tag task suite, a role-conditioned policy commanding a low-level locomotion controller is trained by league-based self-play with sparse feedback, letting simulated humanoids discover pursuit–evasion strategies such as dodging, sprinting and tackling. | [arXiv 2026.11](https://arxiv.org/abs/2611.33407) |
 | [**DynaMimic:** A Physics-Informed World Model for Humanoid Motion Tracking](https://arxiv.org/abs/2611.32944) | Enabling | — | A differentiable world model predicts contact wrenches at candidate support links plus a residual generalized force and computes next states with closed-form Lagrangian forward dynamics, cutting MPJPE by 18.6% versus SuperMimic on 60 LAFAN1 motions and by 14.9% on A3 Parkour terrain tracking; learned policies perform floor recovery, a cartwheel and a box vault on a physical A3 humanoid. | [arXiv 2026.11](https://arxiv.org/abs/2611.32944) |
 | [**DiffGR00T:** Execution-Aware Differentiable Training for Humanoid Whole-Body Vision-Language-Action Models](https://arxiv.org/abs/2611.32665) | Related | — | An action-conditioned learned world model stands in for the simulator so multi-step execution losses backpropagate through a frozen SONIC whole-body controller and the flow-matching sampler into the GR00T N1.7 action head, raising average success on four simulated HumanoidArena tasks from 59.2% to 71.7%. | [arXiv 2026.11](https://arxiv.org/abs/2611.32665) |
 | [**BARE:** Body-Aware Reflexive Evasion for Humanoid Robots](https://arxiv.org/abs/2611.32642) | Core | — | A risk-aware adapter picks retargeted human evasive motions by threatened body region and retimes them by collision urgency, and an RL policy conditioned on per-link collision risk coordinates fast local dodging with whole-body balance in simulation and real-world experiments. | [arXiv 2026.11](https://arxiv.org/abs/2611.32642) |
